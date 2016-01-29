@@ -1,0 +1,79 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Figures}{5}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{8}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}?history of matter/elementary physics/quarks?}{11}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}parton model/QCD?}{12}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}parton distributions}{12}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Quark Fragmentation}{16}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Experimental Landscape}{18}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Unpolarized Distribution Function}{18}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The Helicity Distribution Funtion}{18}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Measuring the Interference Fragmentation Function at Belle}{19}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}RHIC and The STAR Experiment}{21}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}The RHIC complex}{21}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}The STAR Detector}{24}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{TPC}{24}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{BEMC}{29}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{EEMC}{33}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{TOF}{33}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}STAR triggers}{35}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Particle Identification}{35}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Theoretical background}{36}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}2006 analysis and sim}{40}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}2012 IFF}{45}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Data Set and Cuts?}{45}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}particle Identification}{45}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Finding $\pi ^+\pi ^-$ Pairs}{45}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Pair Distributions}{51}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Determining the angles}{54}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Calculating The Asymmetry}{54}{section.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Luminosity Method}{54}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Cross Ratio Method}{54}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Results}{59}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}One Dimensional Kinematic Binning}{59}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Same Sign Pairs}{61}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Check For False Asymmetries}{61}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Two Dimensional Kinematic Binning}{66}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Kaon Pion Pairs}{69}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Trigger Bias}{74}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}discussion}{76}{chapter.9}

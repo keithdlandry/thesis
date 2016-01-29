@@ -1,0 +1,104 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: TSWLatexianTemp_001447.aux
+The style file: biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: TSWLatexianTemp_001447-blx.bib
+Database file #2: thesisBib.bib
+Biblatex version: 1.7
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2504 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2510 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2514 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2514 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2518 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2524 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2528 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2528 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2582 of file biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
+while executing---line 2645 of file biblatex.bst
+You've used 19 entries,
+            6019 wiz_defined-function locations,
+            1257 strings with 11081 characters,
+and the built_in function-call counts, 50999 in all, are:
+= -- 1847
+> -- 1610
+< -- 453
++ -- 394
+- -- 659
+* -- 3609
+:= -- 3172
+add.period$ -- 0
+call.type$ -- 19
+change.case$ -- 222
+chr.to.int$ -- 35
+cite$ -- 36
+duplicate$ -- 5771
+empty$ -- 5742
+format.name$ -- 930
+if$ -- 11718
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 0
+newline$ -- 425
+num.names$ -- 788
+pop$ -- 5591
+preamble$ -- 1
+purify$ -- 246
+quote$ -- 0
+skip$ -- 2907
+stack$ -- 0
+substring$ -- 887
+swap$ -- 1952
+text.length$ -- 429
+text.prefix$ -- 18
+top$ -- 1
+type$ -- 710
+warning$ -- 0
+while$ -- 383
+width$ -- 0
+write$ -- 405
+(There were 21 error messages)
