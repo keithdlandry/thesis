@@ -13,8 +13,20 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 11392 items from 5000.
 Database file #1: TSWLatexianTemp_thesis-blx.bib
 Database file #2: thesisBib.bib
+Warning--entry type for "hardScatAmp" isn't style-file defined
+--line 182 of file thesisBib.bib
+Repeated entry---line 497 of file thesisBib.bib
+ : @article{crossRatio
+ :                    ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 602 of file thesisBib.bib
+ :   
+ :   eprint = "1503.03495v2",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Biblatex version: 1.7
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2500 of file biblatex.bst
@@ -24,6 +36,9 @@ Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianco
 while executing---line 2500 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2500 of file biblatex.bst
+Warning--you've exceeded 250, the entry-string-size, for entry 2006Paper
+while executing--line 2500 of file biblatex.bst
+*Please notify the bibstyle designer*
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2504 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
@@ -36,6 +51,9 @@ Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianco
 while executing---line 2518 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2524 of file biblatex.bst
+Warning--you've exceeded 250, the entry-string-size, for entry 2006Paper
+while executing--line 2528 of file biblatex.bst
+*Please notify the bibstyle designer*
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2528 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
@@ -60,45 +78,45 @@ Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianco
 while executing---line 2645 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2645 of file biblatex.bst
-You've used 19 entries,
+You've used 47 entries,
             6019 wiz_defined-function locations,
-            1257 strings with 11081 characters,
-and the built_in function-call counts, 50999 in all, are:
-= -- 1847
-> -- 1610
-< -- 453
-+ -- 394
-- -- 659
-* -- 3609
-:= -- 3172
+            1488 strings with 23439 characters,
+and the built_in function-call counts, 208867 in all, are:
+= -- 7271
+> -- 7678
+< -- 1418
++ -- 3164
+- -- 3657
+* -- 22600
+:= -- 13800
 add.period$ -- 0
-call.type$ -- 19
-change.case$ -- 222
-chr.to.int$ -- 35
-cite$ -- 36
-duplicate$ -- 5771
-empty$ -- 5742
-format.name$ -- 930
-if$ -- 11718
+call.type$ -- 47
+change.case$ -- 746
+chr.to.int$ -- 44
+cite$ -- 92
+duplicate$ -- 24655
+empty$ -- 20098
+format.name$ -- 7082
+if$ -- 43667
 int.to.chr$ -- 0
-int.to.str$ -- 39
+int.to.str$ -- 124
 missing$ -- 0
-newline$ -- 425
-num.names$ -- 788
-pop$ -- 5591
+newline$ -- 3042
+num.names$ -- 2265
+pop$ -- 15719
 preamble$ -- 1
-purify$ -- 246
+purify$ -- 1197
 quote$ -- 0
-skip$ -- 2907
+skip$ -- 10848
 stack$ -- 0
-substring$ -- 887
-swap$ -- 1952
-text.length$ -- 429
-text.prefix$ -- 18
+substring$ -- 3388
+swap$ -- 8978
+text.length$ -- 1526
+text.prefix$ -- 49
 top$ -- 1
-type$ -- 710
+type$ -- 1772
 warning$ -- 0
-while$ -- 383
+while$ -- 944
 width$ -- 0
-write$ -- 405
-(There were 21 error messages)
+write$ -- 2994
+(There were 23 error messages)
