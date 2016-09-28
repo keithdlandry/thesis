@@ -12,11 +12,11 @@
 \DeclarePairedDelimiter\bra{\langle}{\rvert}
 \DeclarePairedDelimiter\ket{\lvert}{\rangle}
 
-\usepackage{subfig}
+\usepackage{subfig}  %needed for subfloat
 \usepackage[countmax]{subfloat}
 \usepackage{bm}
 \usepackage{longtable}
-\usepackage{subcaption}
+%\usepackage{subcaption}
 \usepackage{tabularx} % in the preamble
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
@@ -87,7 +87,8 @@
 \maketitle
 
 \begin{abstract}
-The transversity distribution $h_1(x)$ of a transversely polarized proton describes the fraction of partons with polarization parallel to the parent proton, carrying a momentum fraction $x$ of the parent proton. This distribution is fundamental for our understanding of the proton spin structure but still very much unknown for values of $x$ larger than about 0.15. In order to understand transversity better, we study transversely spin-polarized proton collisions at STAR, as polarized p+p collisions at RHIC can access this $x$ region and, with a higher scale and transverse momentum,  probe a different kinematic regime than SIDIS. We find sizable spin asymmetries in di-hadron correlations, which can be used to directly probe the transversity distribution of quarks inside protons because they arise from a transversely spin polarized quark fragmenting into two hadrons by the Interference Fragmentation Function. 
+The transversity distribution $h_1(x)$ of a transversely polarized proton describes the fraction of partons with polarization parallel to the parent proton, carrying a momentum fraction $x$ of the parent proton. This distribution is fundamental for our understanding of the proton spin structure but still very much unknown for values of $x$ larger than about 0.15. %In order to understand transversity better, 
+We study transversely spin-polarized proton collisions at $\sqrt{s}=200$ GeV from STAR, as polarized p+p collisions at RHIC can access this $x$ region and, with a higher scale and transverse momentum,  probe a different kinematic regime than SIDIS. We find sizable spin asymmetries in di-hadron correlations, which can be used to directly probe the transversity distribution of quarks inside protons because they arise from a transversely spin polarized quark fragmenting into two hadrons by the Interference Fragmentation Function. 
 \end{abstract}
 
 \tableofcontents
@@ -97,47 +98,46 @@ The transversity distribution $h_1(x)$ of a transversely polarized proton descri
 
 \chapter*{Acronyms}
  
-\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries The longest label}]
-\item[IFF] interference fragmentation function
-\item[QCD] quantum chromo dynamics
-\item[STAR] Solenoid Tracker at RHIC
-\item[RHIC] Relativistic Heavy Ion Collider
-\item[DIS] deep inelastic scattering
-\item[pdf] parton distribution function
-\item[HERMES] ?????
-\item[SLAC] Stanford Linear Accelerator Center
-\item[Belle] ??????
-\item[BNL] Brookhaven National Laboratory 
-\item[AGS] Alternating Gradient Synchrotron
-\item[LINAC]
-\item[OPPIS] optically pumped proton ion source
-\item[TPC] Time Projection Chamber
-\item[BEMC] Barrel Electromagnetic Calorimeter
-\item[PMT] photomultiplier tube
-\item[SMD] Shower Maximum detector
-\item[ToF] Time of Flight
-\item[VPD]
-\item[BBC] Beam Beam Counter
-\item[JP] Jet Patch trigger
-\item[HT] High Tower trigger
-\item[UU] unpolarized-unpolarized
-\item[UT] unpolarized-transversely polarized
-
-\end{description}
+%\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries The longest label}]
+%\item[IFF] interference fragmentation function
+%\item[QCD] quantum chromo dynamics
+%\item[STAR] Solenoid Tracker at RHIC
+%\item[RHIC] Relativistic Heavy Ion Collider
+%\item[DIS] deep inelastic scattering
+%\item[pdf] parton distribution function
+%\item[HERMES] ?????
+%\item[SLAC] Stanford Linear Accelerator Center
+%\item[Belle] ??????
+%\item[BNL] Brookhaven National Laboratory 
+%\item[AGS] Alternating Gradient Synchrotron
+%\item[LINAC]
+%\item[OPPIS] optically pumped proton ion source
+%\item[TPC] Time Projection Chamber
+%\item[BEMC] Barrel Electromagnetic Calorimeter
+%\item[PMT] photomultiplier tube
+%\item[SMD] Shower Maximum detector
+%\item[ToF] Time of Flight
+%\item[VPD]
+%\item[BBC] Beam Beam Counter
+%\item[JP] Jet Patch trigger
+%\item[HT] High Tower trigger
+%\item[UU] unpolarized-unpolarized
+%\item[UT] unpolarized-transversely polarized
+%\end{description}
 
 
 
 \chapter{Introduction}
 
-This thesis deals with the measurement of asymmetry in pion pair production from spin polarized proton collisions, which will allow for the extraction of the transversity distribution function, a fundamental piece needed to enhance our understanding of the proton's internal structure. However before this can be handled we must take a step back and take a look at what got us to this point. Therefore before delving into my analysis, I will include a brief overview of the relevant physics and motivation. 
+We have carried out the measurement of asymmetry in pion pair production from spin polarized proton collisions, which will allow for the extraction of the transversity distribution function, a fundamental function intrinsic to the description of the proton's internal structure. In this chapter we will give an introduction to important historical milestones leading to the current state of affairs. Therefore before delving into my analysis, I will include a brief overview of the relevant physics and motivation. 
 
 \section{Substructure of the atom}
 
-From the ancient philosophers to current scientists, people have always been curious about the structure of matter. In the early 1800s John Dalton took the first large step down and even longer path. Dalton noticed that elements reacted in ratios of small whole numbers. As an explanation, he proposed the idea of atoms.f The next step came in 1897 when J.J. Thomson discovered the electron. He observed that cathode rays would bend in the presence of a magnet and therefore concluded that the rays were actually streams of particles carrying an electric charge. He was able to measure the charge to mass ratio which turned out much larger than expected. This indicated that the mass of the particle was very small. He figured this particle to be a constituent of the atom, but incorrectly proposed a ``plum pudding model" where the electrons were suspended in the accompanying positive charge making the neutral atom. Thomson's incorrect model of the atom was not adjusted until 1919 by Rutherford.
+From the ancient philosophers to current scientists, people have always been curious about the structure of matter. In the early 1800s John Dalton took the first large step down and even longer path. Dalton noticed that elements reacted in ratios of small whole numbers. As an explanation, he proposed the idea of atoms. The next step came in 1897 when J.J. Thomson discovered the electron. He observed that cathode rays would bend in the presence of a magnet and therefore concluded that the rays were actually streams of particles carrying an electric charge. He was able to measure the charge to mass ratio which turned out much larger than expected. This indicated that the mass of the particle was very small. He figured this particle to be a constituent of the atom, but incorrectly proposed a ``plum pudding model" where the electrons were suspended in the accompanying positive charge making the neutral atom. Thomson's incorrect model of the atom was not adjusted until 1919 by Rutherford.
 
 Rutherford challenged Thomson's model when he scattered alpha particles (not yet known to be helium nuclei) into a sheet of gold foil. If the plum pudding was correct, Rutherford expected the alpha particles to be deflected only slightly. What he observed was the opposite. Although most of the particles passed straight through, some of them were deflected wildly. This indicated the positive charge of the atom was concentrated in a very small nucleus. Rutherford named the nucleus of the lightest atom proton, but it wasn't until Chadwick discovered the neutron in 1932 other nuclei could be understood.\cite{IEP}
 
-As heavier nuclei were being described as multiple protons and neutrons, a natural question came up. \textit{What is holding the nucleus together?} In fact with multiple protons all positively charged, one would expect the nucleus to fly apart. There must be another stronger force keeping it together. This conveniently became known as the strong force. In 1934 Yakawa proposed a theory for the strong force. It had to be very short ranged as we don't feel its effects on a large scale. Because of this Yakawa proposed it was mediated, much like the electromagnetic force is mediated by the photon, by a heavy particle.  It wasn't until 1947 when Powell discovered Yakawa's predicted particle and named it the pion. At the same time another lighter particle was discovered that behaved similarly to an electron and given the name muon. The proton and neutron were grouped together and called baryons, or heavy weight particles, the electron and muon were light weight particles called leptons, and the pion was in between and classified a meson.\cite{IEP}  
+As heavier nuclei were being described as multiple protons and neutrons, a natural question came up. \textit{What is holding the nucleus together?} In fact with multiple protons all positively charged, one would expect the nucleus to fly apart. There must be another stronger force keeping it together. This conveniently became known as the strong force. In 1934 Yakawa proposed a theory for the strong force. It had to be very short ranged as we don't feel its effects on a large scale. Because of this Yakawa proposed it was mediated by a heavy particle, much like the electromagnetic force is mediated by the photon.  It wasn't until 1947 when Powell discovered Yakawa's predicted particle and named it the pion. At the same time another lighter particle was discovered that behaved similarly to an electron and given the name muon. The proton and neutron were grouped together and called baryons, or heavy weight particles, the electron and muon were light weight particles called leptons, and the pion was in between and classified as a meson.\cite{IEP}  
 
 \section{Quantum Mechanical Spin}
 
@@ -158,13 +158,23 @@ As the spin-statistics theorem states, all particles with half integer spins are
 
 \section{Nucleon Structure}
 
-Since the proton is a fermion with spin 1/2, it is expected to have a spin magnetic moment similar to that of the electron. Just as the electron's spin magnetic moment was approximatley equal to the Borh magneton, the proton's spin magnetic moment is expected to be approximately equal to the nuclear magneton $\mu_N = e\hbar/2m_p$. However the mesured value of the proton's spin magnetic moment is $\mu_p \approx 2.8 \mu_N$. Moreover, the neutron's spin magnetic moment, which should be zero due to the neutron's lack of charge,  was found to be $\mu_n \approx -1.9\mu_N$. These deviances from expected values were unexplainable but hinted at the fact that nucleons were not elementary particles. This wasn't the only evidence that nucleons were not elementary.  In a similar way Rutherford's scattering experiment suggested the positive charge was confined to a small volume inside the atom, deep inelastic scattering experiments at SLAC showed evidence that the charge of the proton was not distributed uniformly. Instead there was evidence of three substructures in the proton. It wasn't until the quark model this could be explained.
-fjdkfjdklfjldjflsjfs ld use pic from textbook?
+Since the proton is a fermion with spin 1/2, it is expected to have a spin magnetic moment similar to that of the electron. Just as the electron's spin magnetic moment was approximatley equal to the Borh magneton, the proton's spin magnetic moment was expected to be approximately equal to the nuclear magneton $\mu_N = e\hbar/2m_p$. However the mesured value of the proton's spin magnetic moment is $\mu_p \approx 2.8 \mu_N$. Moreover, the neutron's spin magnetic moment, which should be zero due to the neutron's lack of charge,  was found to be $\mu_n \approx -1.9\mu_N$. These deviances from expected values were unexplainable but hinted at the fact that nucleons were not elementary particles. This wasn't the only evidence that nucleons were not elementary.  In a similar way Rutherford's scattering experiment suggested the positive charge was confined to a small volume inside the atom, deep inelastic scattering experiments at SLAC showed evidence (figure \ref{fig:protonSubstructureScattering}) that the charge of the proton was not distributed uniformly. Instead there was evidence of three substructures in the proton. It wasn't until the quark model this could be explained.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width = .6\textwidth]{protonSubstructureScattering}
+\caption[Scattering at SLAC shows proton substructure]{The dashed line shows expectation if positive charge was uniformly distributed in a) the atom and b) the proton \cite{IEP}.}
+\label{fig:protonSubstructureScattering}
+\end{center}
+\end{figure}
+
+
+
 
 
 \section{quark model}
 
-In the coming years experiments detected particles that behaved differently from those currently known. In 1949 a neutral particle, eventually called the $K^0$, was found to decay into a $\pi^+$ and a $\pi^-$. In 1950 another neutral particle was found which decayed into a proton and a negatively charged pion. These newly discovered particles were labeled strange. By 1953 this strange label became a quantum number that had to be conserved just like electric charge. In fact this fits since these new strange particles are always created in pairs. In 1961 Gell-Mann was able to organize all the known particles using what he called the Eightfold Way. All the known mesons and baryons were arranged in a hexagon based on their electric charge and strangeness.  Gell-Mann went even further by proposing that these meson and baryons were actually composed of smaller particles called quarks. He used these quarks to explain why the mesons and baryons were able to be grouped so nicely. His model consisted of three quarks, the up quark the down quark, and the strange quark. He also theorized these quarks were bound together by a force mediated by a gluon; a spin 1 boson. The quark makeup of the eight lightest baryons are is shown in table \ref{tab:baryontable}. Today we know that there are six quarks, not just the three that originally proposed. 
+In the coming years experiments detected particles that behaved differently from those currently known. In 1949 a neutral particle, eventually called the $K^0$, was found to decay into a $\pi^+$ and a $\pi^-$. In 1950 another neutral particle was found which decayed into a proton and a negatively charged pion. These newly discovered particles were labeled strange. By 1953 this strange label became a quantum number that had to be conserved just like electric charge. In fact this fits since these new strange particles are always created in pairs. In 1961 Gell-Mann was able to organize all the known particles using what he called the Eightfold Way. All the known mesons and baryons were arranged in a hexagon based on their electric charge and strangeness.  Gell-Mann went even further by proposing that these meson and baryons were actually composed of smaller particles called quarks. He used these quarks to explain why the mesons and baryons were able to be grouped so nicely. His model consisted of three quarks, the up quark the down quark, and the strange quark. He also theorized these quarks were bound together by a force mediated by a gluon; a spin 1 boson. The quark makeup of the eight lightest baryons are shown in table \ref{tab:baryontable}. Today we know that there are six quarks, not just the three that originally proposed. 
 
 \begin{center}
 \begin{table}[h!]
@@ -201,7 +211,7 @@ In the deep inelastic scattering limit where the momentum transfer $Q^2\rightarr
 \lim\limits_{Q^2\rightarrow\infty, x \text{ fixed}}& MW_1(Q^2,x) &= F_1(x) \label{eq:bjscaling1}\\
 \lim\limits_{Q^2\rightarrow\infty, x \text{ fixed}}& -\frac{q^2}{2Mx}W_2(Q^2,x) &= F_2(x) \label{eq:bjscaling2}
 \end{eqnarray}
-Although Bjorken scaling cannot exactly hold in any relativistic field theory, experiments have shown approximate Bjorken scaling. So structure functions in equations \ref{eq:bjscaling1} and \ref{eq:bjscaling2} will be written $F_1(Q^2,x)$ and $F_2(Q^2,x)$ with the dependence on $Q^2$ being mild. This can be seen in figure \ref{fig:F2Scaling}. It was found that Bjorken scaling could be mildly violated in asymptotically free field theories. This led to the asymptotically free theory of Quantum Chromo Dynamics we have today. 
+Although Bjorken scaling cannot exactly hold in any relativistic field theory \cite{AlderTungPhysRevLett.22.978}, experiments have shown approximate Bjorken scaling. So structure functions in equations \ref{eq:bjscaling1} and \ref{eq:bjscaling2} will be written $F_1(Q^2,x)$ and $F_2(Q^2,x)$ with the dependence on $Q^2$ being logarithmic. This can be seen in figure \ref{fig:F2Scaling}. It was found that Bjorken scaling up to logarithmic violations could be explained in asymptotically free field theories \cite{Gross:1992cw}. This led to the asymptotically free theory of Quantum Chromo Dynamics we have today. 
 \begin{figure}
 \begin{center}
 \includegraphics[width = .6\textwidth]{StructFunc2}
@@ -219,7 +229,7 @@ The factorization theorem says that in the DIS limit,  scattering occurs between
 F_1(Q^2,x) &= \sum\limits_a \int\limits_x^1 \frac{\text{d}\xi}{\xi}f_a(\xi,\mu)H_{1a}\left(\frac{x}{\xi},\frac{Q}{\mu}, \alpha_s(\mu)\right) + \text{ remainder}\\
 \frac{1}{x}F_2(Q^2,x) &= \sum\limits_a \int\limits_x^1 \frac{\text{d}\xi}{\xi}f_a(\xi,\mu)\frac{\xi}{x}H_{2a}\left(\frac{x}{\xi},\frac{Q}{\mu}, \alpha_s(\mu)\right) + \text{ remainder}
 \end{eqnarray} 
-Here $f_a(\xi,\mu)$ is the unpolarized parton distribution function. It gives the probability of finding a free quark for flavor a inside the proton with momentum fraction $\xi$. The renormalization scale, $\mu$, is free to be chosen. The functions $H_{1a}$ and $H_{2a}$ are the hard scattering coefficients which can be calculated. The convenient choice of $\mu = Q$ will be used.\cite{factorization} At leading order the form of the structure functions simplify. CITE GRIFFITH AND SCHOLARPEDIA?
+Here $f_a(\xi,\mu)$ is the unpolarized parton distribution function of flavor "$a$". It gives the probability of finding a free quark for flavor a inside the proton with momentum fraction $\xi$. The renormalization scale, $\mu$, is free to be chosen. The functions $H_{1a}$ and $H_{2a}$ are the hard scattering coefficients which can be calculated. The convenient choice of $\mu = Q$ will be used.\cite{factorization} At leading order the form of the structure functions simplify \cite{IEP}.
 
 \begin{equation}
 F_2(Q^2,x) = 2x F_1(Q^2,x) = \frac{1}{2}\sum\limits_a e_a ^2 f_a(x, Q)
@@ -231,7 +241,7 @@ The factorization theorem can also be applied directly to the cross sections. In
 \sigma_{ep} = \sum\limits_a \int\limits_x^1 \text{d}\xi f_a(\xi) \hat{\sigma}_{ea}\left(\frac{x}{\xi},Q^2\right)
 \end{equation}
 Where $\hat{\sigma}_{ea}$ is a calculable cross section for electron scattering off a parton of type a. In this way the factorization theorem can be generalized to other high energy processes.\cite{factorization}
-The unpolarized distribution function $f_1(x)$ is well known. It can be extracted by fitting a large number of data points from different DIS experiments at different values of $Q^2$ and $x$.\cite{unpolDisFuncPic} In figure \ref{fig:f1} the unpolarized distribution functions for different partons are shown. Not surprisingly partons carrying the largest momentum fraction $x$ are the up quark and down quark. 
+The unpolarized distribution function $f_1(x)$ is well known. It can be extracted by fitting a large number of data points from different DIS experiments at different values of $Q^2$ and $x$ \cite{unpolDisFuncPic}. In figure \ref{fig:f1} the unpolarized distribution functions for different partons are shown. Not surprisingly partons carrying the largest momentum fraction $x$ are the up quark and down quark. 
 \begin{figure}[!tbp]
   \centering
   \subfloat[Electron proton scattering]{\includegraphics[width=0.55\textwidth]{epScattering}\label{fig:epScat}}
@@ -242,7 +252,7 @@ The unpolarized distribution function $f_1(x)$ is well known. It can be extracte
 \begin{figure}
 \begin{center}
 \includegraphics[width = .8\textwidth]{unpolDistFunct}
-\caption[unpolarized parton distrubution function]{The unpolarized parton distribution functions as a function of $x$ at initial scale $Q^2_0 = 2 \text{ GeV}^2$ in NLO approximation.\cite{unpolDisFuncPic}}
+\caption[unpolarized parton distrubution function]{The unpolarized parton distribution functions as a function of $x$ at initial scale $Q^2_0 = 2 \text{ GeV}^2$ in NLO approximation \cite{unpolDisFuncPic}.}
 \label{fig:f1}
 \end{center}
 \end{figure}
@@ -266,11 +276,11 @@ The unpolarized distribution function $f_1(x)$ is well known. It can be extracte
 While the unpolarized distribution tells us some information about the number density of quarks inside a proton, it does not give a complete picture, and does nothing to answer the question about the origin of proton spin. For this we need to look at spin dependent physics, which gives rise to spin dependent parton distribution functions. One of which will be of interest in the remainder of this thesis. 
 
 \section{Logintudinally Polarized Deep Inelastic Scattering}
-A good starting point for the study of spin physics is the polarized version of deep inelastic scattering. Specifically we are interested in a longitudinally polarized lepton beam scattering off of a longitudinally polarized proton. Similarly to the unpolarized case, we can describe it in terms two structure functions $G_1$ and $G_2$. The difference in cross sections when the beam and proton are polarized in the same versus opposite directions is given by
+A good starting point for the study of spin physics is the polarized version of deep inelastic scattering. Specifically we are interested in a longitudinally polarized lepton beam scattering off of a longitudinally polarized proton. Similarly to the unpolarized case, we can describe it in terms of two structure functions $G_1$ and $G_2$. The difference in cross sections when the beam and proton are polarized in the same versus opposite directions is given by
 \begin{equation}
-\frac{\text{d}^2 \theta^{\substack{\leftarrow \\ \leftarrow}}}{\text{d} \Omega \text{d}E^{'}} - \frac{\text{d}^2\theta^{\substack{\leftarrow \\ \rightarrow}}}{\text{d}\Omega\text{d}E^{'}} = \frac{4\alpha^2E^'}{Q^2E}\left[(E+E^{'}cos\theta)MG_1(\nu,Q^2) - Q^2G_2(\nu,Q^2)\right].
+\frac{\text{d}^2 \theta^{\substack{\leftarrow \\ \leftarrow}}}{\text{d} \Omega \text{d}E^{'}} - \frac{\text{d}^2\theta^{\substack{\leftarrow \\ \rightarrow}}}{\text{d}\Omega\text{d}E^{'}} = \frac{4\alpha^2E^{'}}{Q^2E}\left[(E+E^{'}cos\theta)MG_1(\nu,Q^2) - Q^2G_2(\nu,Q^2)\right],
 \end{equation}
-Where $E$ and $E^'$ are the energies of the lepton in the initial and final states, $\nu = p\cdot q/M$, and $G_1$ and $G_2$ are spin dependent structure funtions. In the deep inelastic scattering limit the structure functions $G_1$ and $G_2$ can be written in terms of  dimensionless structure functions that show approximate Bjoken scaling\cite{longReviewPaper}. 
+where $E$ and $E^{'}$ are the energies of the lepton in the initial and final states, $\nu = p\cdot q/M$, and $G_1$ and $G_2$ are spin dependent structure funtions. In the deep inelastic scattering limit the structure functions $G_1$ and $G_2$ can be written in terms of  dimensionless structure functions that show approximate Bjoken scaling \cite{longReviewPaper}. 
 \begin{eqnarray}
 \lim\limits_{Q^2\rightarrow\infty, x \text{ fixed}}& M^2G_1(\nu,Q^2) &= g_1(x) \label{eq:g1}\\
 \lim\limits_{Q^2\rightarrow\infty, x \text{ fixed}}& M\nu^2G_2(\nu,Q^2) &= g_2(x) \label{eq:g2}
@@ -279,9 +289,9 @@ At leading twist, the contribution from $g_2$ vanishes. The spin dependent struc
 \begin{equation}
 g_1(x,Q^2) = \frac{1}{2} \sum\limits_a e^2_a\left(\Delta f_a(x,Q^2) + \Delta \bar{f}_a(x,Q^2)\right).
 \end{equation}
-Called the ``helicity distribution function", $\Delta f$ describes, in the infinite momentum frame of the proton, the number of quarks inside a longitudinally polarized proton with their spin aligned minus the number of quarks with their spin anti-aligned with the proton's spin carrying momentum fraction $x$\cite{longReviewPaper}.
+Called the ``helicity distribution function", $\Delta f$ describes, in the infinite momentum frame of the proton, the number of quarks inside a longitudinally polarized proton with their spin aligned minus the number of quarks with their spin anti-aligned with the proton's spin carrying momentum fraction $x$ \cite{longReviewPaper}.
 
-In 1997 the HERMES collaboration measured $g_1$ using a combination of inclusive and semi-inclusive lepton-nucleon deep inelastic scattering data. \cite{} The data was taken with 27.6 GeV longitudinally polarized positron beam scattering off a longitudinally polarized hydrogen gas target. They constructed a single spin asymmetry $A_{||}$ in the number of scattered positrons. 
+In 1997 the HERMES collaboration measured $g_1$ using a combination of inclusive and semi-inclusive lepton-nucleon deep inelastic scattering data \cite{hermesHel}. The data was taken with 27.6 GeV longitudinally polarized positron beam scattering off a longitudinally polarized hydrogen gas target. They constructed a single spin asymmetry $A_{||}$ in the number of scattered positrons. 
 \begin{equation}
 A_{||} = \frac{N^-L^+ - N^+L^-}{N^-L_P^+ + N^+L_P^-} 
 \end{equation}
@@ -300,16 +310,18 @@ Hermes is not the only collaboration to extract the helicity distribution. The H
 \end{figure}
 
 \section{Proton Spin Crisis}
-However the spin of the proton comes about, it must be conceived from the spin of the quarks, $\Sigma$, the orbital angular momentum of the quarks, $L_q$, the orbital angular momentum of the gluons, $L_g$, and the spin of the gluon, G. These must sum to equal the spin of the proton.
+However the spin of the proton comes about, it must be conceived from the spin of the quarks, $\Sigma$, the orbital angular momentum of the quarks, $L_q$, the orbital angular momentum of the gluons, $L_g$, and the spin of the gluon, $\Delta G$. These must sum to equal the spin of the proton.
 \begin{equation}
-\frac{1}{2} = \frac{1}{2}\Sigma + L_q + L_g + G
+\frac{1}{2} = \frac{1}{2}\Sigma + L_q + L_g + \Delta G
 \end{equation}
-In the naive quark model, it was expected that the entirety of the proton spin would be carried by the three valence quarks. In a relativistic theory with QCD corrections, only about 60\% of the proton spin is thought to be carried by the quarks. The measured value of $\int\limits_0^1 \text{d}x g_1(x)$, however corresponds to a value of $\Sigma$ of $0.120 \pm 0.16$ or consistent with zero. This suggests that virtually none of the proton spin in carried by valence quarks. More recent measurements provide a value of $0.27\pm 0.05$ for $\Sigma$, still much smaller than theoretical prediction from relativistic models \cite{jaffeWhereSpinComeFrom}. 
+In the naive quark model, it was expected that the entirety of the proton spin would be carried by the three valence quarks. In a relativistic theory with QCD corrections, only about 60\% of the proton spin is thought to be carried by the quarks. The initially measured value of $\int\limits_0^1 \text{d}x g_1(x)$, however corresponds to a value of $\Sigma$ of $0.120 \pm 0.16$ or consistent with zero \cite{jaffeWhereSpinComeFrom}. This suggests that virtually none of the proton spin in carried by valence quarks. More recent measurements provide a value of $0.27\pm 0.05$ for $\Sigma$, still much smaller than theoretical expectation from relativistic models \cite{jaffeWhereSpinComeFrom}.  
+
+It is possible that the contribution to proton spin from gluon spin is larger than previously thought. A global analysis of data from both STAR and PHENIX suggest the contribution from $\Delta G$ is sizable after all \cite{deFlorian:2014yva}. More data is needed to form a more conclusive answer. 
 
 \section{Transversity Distribution Function}
-So far only logintudinal spin has been taken into account. Another piece to the proton spin puzzle deals with transverse spin. This can be described by another parton distribution function (written $h_1$ or $\Delta_T f$), which wasn't even considered until Ralston and Soper introduced it in 1979\cite{transIntroduced}, called the ``transversity distribution function". This distribution function describes the number of quarks with their spin aligned minus the number of quarks with their spin anti-aligned with the proton's spin carrying momentum fraction $x$ when the proton's spin in perpendicular to its direction of motion. One might think this is equivalent to the helicity distribution function as the probability of finding a parton whose spin is aligned versus anti-aligned with the proton spin shouldn't depend on the direction of the proton spin. This is true for a proton in its rest frame. However this interpretation of the helicity and transversity distributions are only viable in the infinite momentum frame of the proton. In a relativistic setting such as this, Lorentz boosts cause these distributions to differ \cite{BacchettaThesis}.   
+So far only logintudinal spin has been taken into account. Another piece to the proton spin puzzle deals with transverse spin. This can be described by another parton distribution function (written $h_1$ or $\Delta_T f$), which wasn't even considered until Ralston and Soper introduced it in 1979 \cite{transIntroduced}, called the ``transversity distribution function". This distribution function describes the number of quarks with their spin aligned minus the number of quarks with their spin anti-aligned with the proton's spin carrying momentum fraction $x$ when the proton's spin is perpendicular to its direction of motion. One might think this is equivalent to the helicity distribution function as the probability of finding a parton whose spin is aligned versus anti-aligned with the proton spin shouldn't depend on the direction of the proton spin. This is true for a proton in its rest frame. However this interpretation of the helicity and transversity distributions are only viable in the infinite momentum frame of the proton. In a relativistic setting such as this, Lorentz boosts cause these distributions to differ \cite{BacchettaThesis}.
 
-Unlike the helicity distribution function, the transversity distribution function does not appear in lepton inclusive deep inelastic scattering due to its chiral odd nature. In order to observe its effects, it must be paired with another chiral odd object to create a chiral even observable. Because of this, the transversity distribution function is currently not very well known. 
+Unlike the helicity distribution function, the transversity distribution function does not appear in lepton inclusive deep inelastic scattering due to its chiral odd nature. In order to observe its effects, it must be paired with another chiral odd object to create a chiral even observable, making it harder to access. Because of this, the transversity distribution function is currently not very well known.
 
 \section{First Experimental Measurements of Transversity}
 \subsection{In Single Hadron Production semi-inclusive DIS}
@@ -317,18 +329,19 @@ The detection of a single hadron in the final sate introduces another chiral odd
 \begin{equation}
 e+p^\uparrow \rightarrow e + h + X.
 \end{equation}
-Just as in the experiment to measure the helicity distribution, a single spin asymmetry was detected \ref{Airapetian:2004tw},
+Just as in the experiment to measure the helicity distribution, a single spin asymmetry was detected \cite{Airapetian:2004tw},
 \begin{equation}
 A^h_{UT}(\phi,\phi_S) = \frac{1}{|S_T|}\frac{N^\uparrow_h(\phi,\phi_S) - N^\downarrow_h(\phi,\phi_S)}{N^\uparrow_h(\phi,\phi_S) + N^\downarrow_h(\phi,\phi_S)}
 \end{equation} 
 where $N^{\uparrow(\downarrow)}_h(\phi,\phi_S)$ is the number of hadrons produced at azimuthal angle $\phi$ and angle $\phi_S$ to the proton spin when the spin is polarized up(down), and $|S_T|$ is the polarization of the target proton spin. 
 
-There are two sources of this asymmetry present in the cross section. These are the Collins azimuthal moment $\langle\sin(\phi+\phi_S)\rangle_{UT}^h$ and the Sivers moment $\langle\sin(\phi-\phi_S)\rangle_{UT}^h$. These were both measured and can be seen in figures \ref{fig:collinsMoment}, \ref{fig:siversMoment}. From these transversity could be extracted \cite{Anselmino:2007fs}.
+There are two sources of this asymmetry present in the cross section. These are the Collins azimuthal moment $\langle\sin(\phi+\phi_S)\rangle_{UT}^h$ and the Sivers moment $\langle\sin(\phi-\phi_S)\rangle_{UT}^h$. These were both measured and can be seen in figures \ref{fig:singleHadHERMES}a, \ref{fig:singleHadHERMES}b. From these transversity could be extracted \cite{Anselmino:2007fs}.
 
 \begin{figure}
-	\caption{}
+	\caption{Single Spin Asymmetry in SIDIS single hadron production measurements from HERMES \cite{Airapetian:2004tw}}
+	\label{fig:singleHadHERMES}
 	\begin{tabular}{cc}
-	\subfloat[Measurement of collins moment]{\includegraphics[width=.5\textwidth]{colinsMomentSHsidis}\label{fig:collinsMoment}} & \subfloat[Measurement of sivers moment]{\includegraphics[width=.5\textwidth]{siversMomentSHsidis}\label{fig:siversMoment}} 
+	\subfloat[Measurement of Collins moment]{\includegraphics[width=.5\textwidth]{colinsMomentSHsidis}\label{fig:colMoment}} & \subfloat[Measurement of Sivers moment]{\includegraphics[width=.5\textwidth]{siversMomentSHsidis}\label{fig:sivMoment}} 
 	\end{tabular}
 \end{figure}
 \FloatBarrier
@@ -349,7 +362,7 @@ Once again a singe spin asymmetry was measured. This is shown in figure \ref{fig
  \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{hermesAsym}
-\caption[]{}
+\caption[Single Spin Asymmetry measured by the HERMES collaboration]{Single Spin Asymmetry measured by the HERMES collaboration \cite{hermesRes}}
 \label{fig:hermesAsym}
 \end{center}
 \end{figure}
@@ -357,16 +370,16 @@ This asymmetry is related to the transversity distribution by \cite{hermesRes},
  \begin{equation}
 A_{UT}^{\sin(\phi_{R\perp}+\phi_S)\sin\theta} = - \frac{1-y}{1-y-\frac{y^2}{2}}\frac{1}{2}\sqrt{1-4\frac{M_\pi^2}{M_{\pi\pi}^2}}\frac{\sum\limits_q e_q^2h_1^q(x)H_{1,q}^{\sphericalangle,sp}(z,M_{\pi\pi})}{\sum\limits_q e_q^2f_1^q(x)D_{1,q}(z,M_{\pi\pi})}
 \end{equation}
-where $y = (P\cdot q)/(P\cdot k)$, $q$ and $k$ are the momenta of the virtual photon and incoming positron respectfully, $H_{1,q}^{\sphericalangle,sp}(z,M_{\pi\pi})$ is the IFF describing the probability of transversely polarized quark q fragmenting into a pion pair with invariant mass $M_{\pi\pi}$ retaining momentum fraction $z$ of the fragmenting quark, and $D_{1,q}(z,M_{\pi\pi})$ is the unpolarized partner of the IFF. 
+where $y = (P\cdot q)/(P\cdot k)$, $q$ and $k$ are the momenta of the virtual photon and incoming positron respectfully, $H_{1,q}^{\sphericalangle,sp}(z,M_{\pi\pi})$ is the IFF describing the probability of transversely polarized quark q fragmenting into a pion pair with invariant mass $M_{\pi\pi}$ retaining momentum fraction $z$ of the fragmenting quark, and $D_{1,q}(z,M_{\pi\pi})$ is the unpolarized partner of the IFF, $h_1^q(x)$ is the transversity distribution for parton $q$ while $f_1^q(x)$ is the unpolarized distribution for a parton $q$.
 
-The asymmetry observed in this dihadron production does not depend on parton transverse momentum allowing it to be analyzed in the collinear framework. The single hadron production must be analyzed in the Transverse Momentum Dependent (TMD) framework. TMD factorization has been shown to not be equivalent between different processes, however collinear factorization is the same from process to process. This allows the dihadron production to be useful in comparing results in lepton scattering and hadronic collisions as well as making predictions \cite{univTrans}.  
+The asymmetry observed in this dihadron production does not depend on parton transverse momentum allowing it to be analyzed in the collinear framework. The single hadron production must be analyzed in the Transverse Momentum Dependent (TMD) framework. TMD factorization has been shown to depend on physical processes; however, collinear factorization is the same from process to process. This makes the asymmetry in dihadron production a useful observable when comparing results in lepton scattering and hadronic collisions as well as when making predictions \cite{univTrans}.  
   
 %Go into benefits of the two-hadron process (collinear vs TMD = universal so I can make predictions of hadron processes)
 
-\subsection{In Proton Collisions}
-There are several benefits in measuring the transversity distribution in proton-proton collisions as well. First of all, it can act as a test of the universality of the parton distributions. Furthermore, in proton-proton collisions, the momentum fraction carried by the interacting quarks is much higher than the fixed target SIDIS experiments previously discussed. This allows us to extend our knowledge we have of the transversity distribution. 
+\subsection{Transversity measurmentt in $p+p$ Collisions}
+There are several benefits in measuring the transversity distribution in proton-proton collisions as well. First of all, it can test the universality of the parton distributions. Furthermore, in proton-proton collisions, the momentum fraction carried by the interacting quarks is much higher than the fixed target SIDIS experiments previously discussed. This allows us to extend our knowledge we have of the transversity distribution into a new kinematic regime. 
 
-There are several ongoing experiments at STAR which are sensitive to the transversity distribution. One such experiment is single charged hadron, typically a pion, production $p^\uparrow + p \rightarrow \pi + X$ at mid-rapidity coupled to the Collins Fragmentation Function. Another is mid-rapidity W and Z boson production coupled to the Sivers Function. In the forward rapidity, neutral pion production is sensitive to the transversity distribution through both the Collins and the Sivers Functions. 
+There are several ongoing measurments at STAR which are sensitive to the transversity distribution. One such experiment is single charged hadron, typically a pion, production $p^\uparrow + p \rightarrow \pi + X$ at mid-rapidity coupled to the Collins Fragmentation Function. Another is mid-rapidity W and Z boson production coupled to the Sivers Function. In the forward rapidity, neutral pion production is sensitive to the transversity distribution through both the Collins and the Sivers Functions. 
 
 The rest of this thesis will cover the measurement of transversity through double charged hadron production $p^\uparrow + p \rightarrow h_1^+h_2^- + X$ at mid-rapidity. As mentioned in chapter \ref{subSec:doublehadProd}, this is coupled with the Interference Fragmentation Function. Therefore in order to obtain useful information about the transversity distribution, we need a measurement of the IFF. 
 
@@ -437,12 +450,12 @@ a_{12} \propto \frac{1}{2} \frac{\sin^2\theta}{1+\cos^2\theta} \left[ \sum_{q,\b
 \label{eq:A-Casym}
 \end{multline}
 
-Here $\theta$ is the polar angle defined between the beam axis and the reference axis, $D^q$ is the unpolarized equivalent of the IFF, $z_{1(2)}$ is the energy fraction pion pair 1(2) has, and $m_{1(2)}$ is the invariant mass of pair 1(2). The people at Belle reported the modulation $a_{12}$ for different $z_1,z_2$ bins as well as different $m_1,m_2$ bins for different quark flavors. The modulation $a_{12}$ is shown in figure \ref{fig:BelleMod} plotted versus the invariant mass. With this data, Courtoy et al were able to extract the Interference Fragmentation Function.\cite{extractIFF}
+Here $\theta$ is the polar angle defined between the beam axis and the reference axis, $D^q$ is the unpolarized equivalent of the IFF, $z_{1(2)}$ is the energy fraction pion pair 1(2) has, and $m_{1(2)}$ is the invariant mass of pair 1(2). Belle reported the modulation $a_{12}$ for different $z_1,z_2$ bins as well as different $m_1,m_2$ bins for different quark flavors \cite{belleIFF}. The modulation $a_{12}$ is shown in figure \ref{fig:BelleMod} plotted versus the invariant mass. With this data, Courtoy et al were able to extract the Interference Fragmentation Function \cite{extractIFF}.
 
  \begin{figure}
 \begin{center}
 \includegraphics[width = .7\textwidth]{BelleAnnModulationM}
-\caption[Asymmetry seen in $e^-e^+$ annihilation at Belle]{Asymmetry in the number of back to back pion pairs seen at Belle plotted vs the invariant mass.}
+\caption[Asymmetry seen in $e^-e^+$ annihilation at Belle]{Asymmetry in the number of back to back pion pairs seen at Belle plotted vs the invariant mass \cite{belleIFF}.}
 \label{fig:BelleMod}
 \end{center}
 \end{figure}
@@ -506,7 +519,7 @@ Here $\theta$ is the polar angle defined between the beam axis and the reference
 \section{Extracting IFF}
 \label{sec:extractIFF}
 
-The interference fragmentation function was extracted from the BELLE data using the replica method\cite{extractIFF}. N sets of replica data points were produced by shifting the experimentally determined data points by gaussian noise with the same width as the measured error. It was found that roughly 100 replicas were sufficient for the mean and standard deviation of the replicated data points reflected the measurement accurately\cite{extractIFF2}. 
+The interference fragmentation function was extracted from the BELLE data using the replica method \cite{extractIFF}. N sets of replica data points were produced by shifting the experimentally determined data points by gaussian noise with the same width as the measured error. It was found that roughly 100 replicas were sufficient for the mean and standard deviation of the replicated data points reflected the measurement accurately\cite{extractIFF2}. 
 
 By integrating over the antiquark jet, the Arturo-Collins asymmetry from equation \ref{eq:A-Casym} becomes proportional to
 \begin{equation}
@@ -526,12 +539,12 @@ where index $i$ runs over the data points in invariant mass bin $j$. This result
 \begin{equation}
 R(z_1,m_1) = \frac{|\bm{R}|}{m_1} \frac{H_1^{\sphericalangle u}(z_1,m_1;Q^2)}{D_1^u(z_1,m_1;Q^2)}
 \end{equation}
-This ratio can be seen in figure \ref{fig:extractionIFF} as a function of $m_1$ for different values of the fractional energy $z$. Each colored band represents on of these values of z and corresponds to 68\% of the 100 replicas. Now armed with $H_1^\sphericalangle$, we can access the transversity in our analysis.  
+This ratio can be seen in figure \ref{fig:extractionIFF} as a function of $m_1$ for different values of the fractional energy $z$. Each colored band represents one of these values of z and corresponds to 68\% of the 100 replicas. Now armed with $H_1^\sphericalangle$, we can access the transversity in our analysis.  
 
  \begin{figure}
 \begin{center}
 \includegraphics[width = .8\textwidth]{extractionIFF2}
-\caption[Extraction of IFF from Belle data]{The ratio $R(z,M_h)$ as a function of $M_h$ for three values of $z$: $z = 0.25$(purple), $z=0.45$(green), and $z=0.65$(red). The left panel is for $\alpha_s = 0.125$, and the right pannel is for $\alpha_s = 0.139$\cite{RealEstValTrans}. Note: in their notation $M_h = m_1$ is the invariant mass of the pion pair coming from the quark.}
+\caption[Extraction of IFF from Belle data]{The ratio $R(z,M_h)$ as a function of $M_h$ for three values of $z$: $z = 0.25$(purple), $z=0.45$(green), and $z=0.65$(red). The left panel is for $\alpha_s = 0.125$, and the right pannel is for $\alpha_s = 0.139$ \cite{RealEstValTrans}. Note: in their notation $M_h = m_1$ is the invariant mass of the pion pair coming from the quark.}
 \label{fig:extractionIFF}
 \end{center}
 \end{figure}
@@ -541,7 +554,7 @@ This ratio can be seen in figure \ref{fig:extractionIFF} as a function of $m_1$ 
 
 \section{Summary}
 
-To leading order, the parton kinematics inside a proton can be described by three parton distribution functions (figure \ref{fig:PDFs}); the unpolarized distribution function, $f_1(x)$, the helicity distribution function $\Delta f (x)$, and the transversity distribution function, $h_1(x)$\cite{JaffeTONS}. The first two are know well from DIS experiments, while the transversity distribution is not. Due to its chiral odd nature, a more difficult experiment is required to probe the transversity of partons inside the proton.  
+To leading order, the parton kinematics inside a proton can be described by three parton distribution functions (figure \ref{fig:PDFs}); the unpolarized distribution function, $f_1(x)$, the helicity distribution function $\Delta f (x)$, and the transversity distribution function, $h_1(x)$ \cite{JaffeTONS}. The first two are know well from DIS experiments, while the transversity distribution is not. Due to its chiral odd nature, a more difficult experiment is required to probe the transversity of partons inside the proton.  
 \begin{figure}
 \begin{center}
 \includegraphics[width = .7\textwidth]{allDistsPic3}
@@ -551,12 +564,12 @@ Bottom: Transversity distribution function $h_1(x)$}
 \label{fig:PDFs}
 \end{center}
 \end{figure}
-In the case of this thesis, a SIDIS experiment where two pions oppositely charged pions are detected will be utilized to probe transversity. The IFF, which is used to describe how a transversely polarized quark fragments into a pair of oppositely charged pions is used as the second chiral odd object to pair with the transversity distribution function in order to construct and observable. A more detailed overview of the physics involved in the experiment will be given in chapter \ref{ch:theory}.
+In the case of this thesis, a SIDIS experiment where two oppositely charged pions are detected will be utilized to probe transversity. The IFF, which is used to describe how a transversely polarized quark fragments into a pair of oppositely charged pions is used as the second chiral odd object to pair with the transversity distribution function in order to construct an observable. A more detailed overview of the physics involved in the analysis will be given in chapter \ref{ch:theory}.
 
 \chapter{RHIC and The STAR Experiment}
 
 \section{The RHIC complex}
-The Relativistic Heavy Ion Collider, located at Brookhaven Nation Lab, is one of the only places in the world that allows for spin polarized proton collisions, yet is also able to collide heavy nuclei as the name suggests. The RHIC complex, shown in figure \ref{fig:rhic}, is composed of a chain of accelerators which boost the energy in steps before finally injecting the particles into the large ring of RHIC. Heavy nuclei are first delivered to the Booster Synchrotron where they are accelerated to 95MeV per nucleon. After which they are transfered to the Alternating Gradient Synchrotron (AGS). Here they are re-bunched into four bunches and accelerated to 10.8 GeV per nucleon, at which point they are injected into the RHIC ring and accelerated to their final energy. The highest energy RHIC can accommodate for heavy ions is 100 GeV per nucleon. 
+The Relativistic Heavy Ion Collider, located at Brookhaven Nation Laboratory, is the only collider in the world that allows for spin polarized proton collisions, as well as heavy nuclei collisions as the name suggests. The RHIC complex, shown in figure \ref{fig:rhic}, is composed of a chain of accelerators which boost the energy in steps before finally injecting the particles into the large ring of RHIC. Heavy nuclei are first delivered to the Booster Synchrotron where they are accelerated to 95MeV per nucleon. After which they are transferred to the Alternating Gradient Synchrotron (AGS). Here they are re-bunched into four bunches and accelerated to 10.8 GeV per nucleon, at which point they are injected into the RHIC ring and accelerated to their final energy. The highest energy RHIC can accommodate for heavy ions is 100 GeV per nucleon for gold nuclei. 
 The story for protons is a little different. They are injected already spin polarized into the Booster Synchrotron from an older LINAC accelerator. In order to keep the spin polarization for the proton beam, special magnets called Siberian Snakes are used. These magnets flip the proton spin by 180 degrees. From this point they are accelerated in the Booster and AGS before being injected into the RHIC storage ring. Here they are accelerated up to a maximum 250 GeV. 
 The RHIC storage ring itself actually consists of two independent rings 3.8 km in circumference. This allows for the collisions of different species. The independent rings intersect at six locations. the STAR detector is located at one such intersection points\cite{RHICoverview}.
 
@@ -567,10 +580,10 @@ The RHIC storage ring itself actually consists of two independent rings 3.8 km i
 \label{fig:rhic}
 \end{center}
 \end{figure}
-As acceleration of polarized protons in a circular accelerator cause resonances which act to depolarize the beam. Special magnets called Siberian Snakes are used to overcome these depolarizing resonances. The roll of the Siberian Snakes are to rotate the proton spin as shown in figure \ref{fig:spinFlip}. If the spin rotation from the Siberian Snakes is much larger than that of the depolarizing resonances, the beam polarization is kept intact. In the RHIC ring, this is achieved with Siberian Snakes which rotate the proton spin by 180 degrees. The lower energy of the AGS calls for only partial Siberian Snakes which rotate less than 180 degrees, but still enough to maintain beam polarization. \cite{ppCollider}
-Each Siberian Snake consists of 4 superconducting helical dipole magnets. Along with the Siberian Snakes, spin rotators are located at the six interaction points. These allow for the proton spin to be rotated from the transverse plane to the longitudinal plane before collisions.  \cite{ppCollider}
+As acceleration of polarized protons in a circular accelerator cause resonances which act to depolarize the beam. Special magnets called Siberian Snakes are used to overcome these depolarizing resonances. The roll of the Siberian Snakes are to rotate the proton spin as shown in figure \ref{fig:spinFlip}. If the spin rotation from the Siberian Snakes is much larger than that of the depolarizing resonances, the beam polarization is kept intact. In the RHIC ring, this is achieved with Siberian Snakes which rotate the proton spin by 180 degrees. The lower energy of the AGS calls for only partial Siberian Snakes which rotate less than 180 degrees, but still enough to maintain beam polarization \cite{ppCollider}.
+Each Siberian Snake consists of 4 superconducting helical dipole magnets. Along with the Siberian Snakes, spin rotators are located at the experimental interaction points. These allow for the proton spin to be rotated from the transverse plane to the longitudinal plane before collisions as some experiments require \cite{ppCollider}.
 
-Polarized protons start out as polarized $H^-$ ions produced from an optically pumped proton ion source (OPPIS).  This source produces $9\times 10^{11}$ polarized $H^-$ ions per 300$\mu$s pulse. These polarized ions are then accelerated to 200 MeV in the LINAC. They are then stripped of the electrons and injected into the Booster where they are further accelerated to 10.5 GeV. From here they are sent to the AGS and accelerated to 25 GeV. The final step is a transfer to RHIC for acceleration to a maximum of 250 GeV and storage.   \cite{ppCollider}
+Polarized protons start out as polarized $H^-$ ions produced from an optically pumped proton ion source (OPPIS).  This source produces $9\times 10^{11}$ polarized $H^-$ ions per 300$\mu$s pulse. These polarized ions are then accelerated to 200 MeV in the LINAC. They are then stripped of the electrons and injected into the Booster where they are further accelerated to 10.5 GeV. From here they are sent to the AGS and accelerated to 25 GeV. The final step is a transfer to RHIC for acceleration to a maximum of 250 GeV and storage \cite{ppCollider}.
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{spinFlipFromPaper}
@@ -597,7 +610,7 @@ The Solinoid Tracker at RHIC (STAR) is located at the 6 o'clock position on the 
 \end{figure}
 
 
-One of they key detectors of STAR is the Time Projection Chamber (TPC). It is tasked with tracking particles, measuring momenta, and detecting ionization energy loss, dE/dx, to aid in particle identification. The TPC is the large cylindrical gas chamber covering $\pm1.8$ units of pseudorapidity around the interaction point. It's filled with a mixture of 10$\%$ methane and $90\%$ argon at a pressure of 2mbar above atmospheric pressure. As a charged particle passes through the TPC, the gas is ionized, leaving a trail of electrons in it's wake. These electrons drift to the end caps of the TPC under a uniform electric field of about 135 V/cm where they are analyzed to reconstruct the track of the ionizing particle. The particle's path will curve due to the presence of STAR's magnetic field an amount proportional to the particles charge and it's velocity, allowing for the measurement of particle momenta, charge, and ionization energy loss.
+One of they key detectors of STAR is the Time Projection Chamber (TPC). It is tasked with tracking particles, measuring momenta, and detecting ionization energy loss, dE/dx, to aid in particle identification. The TPC is the large cylindrical gas chamber covering $\pm1.8$ units of pseudorapidity around the interaction point. It's filled with a mixture of 10$\%$ methane and $90\%$ argon at a pressure of 2mbar above atmospheric pressure. As a charged particle passes through the TPC, the gas is ionized, leaving a trail of electrons in it's wake. These electrons drift to the end caps of the TPC under a uniform electric field of about 135 V/cm where they are collected in a proportional chamber to record their drift time and location in the $r-\phi$ plane and along the $z$ direction. This information can be analyzed to reconstruct the track of the ionizing particle. The particle's path will curve due to the presence of STAR's magnetic field an amount proportional to the particles charge and it's velocity, allowing for the measurement of particle momenta, charge, and ionization energy loss.
 
 
 
@@ -614,9 +627,9 @@ At the center of the TPC is a central membrane which splits the TPC in two halve
 
 A mixture of 10$\%$ methane and $90\%$ argon is chosen for the TPC gas due to its fast drift velocity. This drift velocity also peaks at the operating electric field (135 V/cm) making it relatively unaffected by subtle fluctuations in the electric field.
 
-The TPC gas drift velocity is calibrated with a laser system. Thirty six aluminum plates are positioned on either side of the central membrane and are illuminated with an ultraviolet laser. This causes photo-ejection of electrons which drift to the end caps where they are read. The position of the aluminum plates are known with such precision that the time it takes the ejected electrons to reach the end cap readouts as well as the position they reach can be used for calibration. 
+The TPC gas drift velocity is calibrated with a laser system. Thirty six aluminum stripes are positioned on either side of the central membrane and are illuminated with an ultraviolet laser. This causes photo-ejection of electrons which drift to the end caps where they are read. The position of the aluminum stripes are known with such precision that the time it takes the ejected electrons to reach the end cap readouts as well as the position they reach can be used for calibration. 
 
-The end cap is equipped with 12 modular sectors arranged in a circle. These sectors are arrange like a clock with only 3mm separating them. Each sector, shown in figure \ref{fig:tpcPad}, has a grid of readout pads and a wire proportional chamber consisting of three wire girds; a gated grid, a shield (or ground) grid and and anode grid. The gated grid is required to keep boundary conditions with the central membrane and field cage in order to achieve the uniform electric field, and is thus arranged to do so. The anode wire plane is made up of 20$\mu$ wires aligned radially around the sector. This is to achieve maximum precision of the measurement of momenta from high momentum (straight) tracks. The anode grid is completed by wires in the other direction separated by 4 mm.
+The end cap is equipped with 12 modular sectors arranged in a circle. These sectors are arranged like a clock with only 3mm separating them. Each sector, shown in figure \ref{fig:tpcPad}, has a grid of readout pads and a wire proportional chamber consisting of three wire grids; a gating grid, a shield (or ground) grid and an anode grid. The gating grid is required to keep boundary conditions with the central membrane and field cage in order to achieve the uniform electric field, and is thus arranged to do so. It prohibits ions generated from avalanches on the anode wire from drifting back into the main TPC region and effecting the drift field. The anode wire plane is made up of 20$\mu$ wires aligned radially around the sector. This is to achieve maximum precision of the measurement of momenta from high momentum (straight) tracks. The anode grid is completed by wires in the other direction separated by 4 mm.
 
 \begin{figure}
 \begin{center}
@@ -625,7 +638,7 @@ The end cap is equipped with 12 modular sectors arranged in a circle. These sect
 \label{fig:tpcPad}
 \end{center}
 \end{figure}
-As the drifting electrons reach the anode grid an avalanche occurs triggering a temporary image charge to be induced on the read out pads. The width of each read out pad is chosen such that only three read out pads will share the signal from a single avalanche. This allows for the best centriod reconstruction. The grid of read out pads is broken up into two sections. The outer portion of the grid has continuously packed read-out pads measuring 6.7mm by 20mm optimized for good dE/dx resolution. These pads are located 4mm behind the anode grid. The inner portion has smaller read out pads measuring 3.35 mm by 12 mm optimized for good 2 hit detection. This helps with the large track density seen in the inner portion of the TPC. Unfortunately the available space for electronics for the small pads isn't large enough to have continuous coverage as in the outer section. Instead they are arrange in strips as seen in figure \ref{fig:tpcPad}. This arrangement prohibits the inner section to be much help in dE/dx resolution\cite{TPC}.
+As the drifting electrons reach the anode grid an avalanche occurs triggering a temporary image charge to be induced on the read out pads. The width of each read out pad is chosen such that optimally up to three read out pads will share the signal from a single avalanche. This allows for the best centriod reconstruction. The grid of read out pads is broken up into two sections. The outer portion of the grid has continuously packed read-out pads measuring 6.7mm by 20mm optimized for good dE/dx resolution. These pads are located 4mm behind the anode grid. The inner portion has smaller read out pads measuring 3.35 mm by 12 mm optimized for good 2 hit detection. This helps with the large track density seen in the inner portion of the TPC. Due to the nature of the small pads, the space for electronics was limited. Unfortunately the electronic boards for read out were not compact enough in the late 1990's when the TPC was constructed to fit in this available space. Because of this, it was impossible to have continuous coverage for the inner section as in the outer section. Instead they are arrange in strips as seen in figure \ref{fig:tpcPad}. This arrangement prohibits the inner section to be much help in dE/dx resolution \cite{TPC}.
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{tpc_dEdx}
@@ -647,7 +660,7 @@ As the drifting electrons reach the anode grid an avalanche occurs triggering a 
 \end{figure}
 
 
-The Barrel Electromagnetic Calorimeter (BEMC) is a large array of lead and plastic scintillator sitting outside the TPC and inside the STAR magnet. At $\eta = 0$ the BEMC is roughly 20 radiation lengths thick allowing it to contain electromagnetic showers up to 60 GeV. Scintillation light is carried from the BEMC array to outside the STAR magnet where it is fed into photomultiplier tubes (PMT).
+The Barrel Electromagnetic Calorimeter (BEMC) is a large array of lead and plastic scintillator sampling calorimeter sitting outside the TPC and inside the STAR magnet. At $\eta = 0$ the BEMC is roughly 20 radiation lengths thick allowing it to contain electromagnetic showers up to 60 GeV. Optical fibers are used to carry scintillation light from the BEMC array to outside the STAR magnet where it is fed into photomultiplier tubes (PMT).
 
 The BEMC is composed of a total of 4800 towers, each one subtending 0.05$^\circ$ in $\phi$ and 0.05 units in $\eta$. A tower consists of 20 layers of 5 mm thick lead, 19 layers of 5mm thick scintillator, and two layers of 6 mm thick scintillator. Each tower is angled toward the reaction region as seen in figure \ref{fig:BEMC2}.  
 
@@ -671,7 +684,7 @@ The active scintillating layers, both pre-shower and regular, are made of Kurara
 \end{center}
 \end{figure}
 
-As neutral particles, such as $\pi^0$, do not ionize the TPC gas, the BEMC is tasked with providing spacial resolution of such species. Instead of making the size of each tower of the BEMC comparable to the Moliere radius in the lead-plastic scintillator, a shower maximum detector (SMD) is added into the BEMC for spacial resolution. The SMD, set at about 5.6 radiation lengths at $\eta=0$, is composed of an aluminum plate with divots on either side. As seen in figure \ref{fig:SMD2}, a 50$\mu$m gold-plated tungsten anode wire lies in each divot. The wires run along the barrel. As the electromagnetic shower passes these wires a charge is induced. This charge is amplified by the gas in the divot. Detection strips are located on the top and bottom faces of the aluminum plate. One set of strips runs parallel to the wires and provides the spacial distribution of the shower in the $\eta$ direction. The other set, running perpendicular to the wires provides the spacial distribution in the $\phi$ direction. A schematic of this is shown in figure \ref{fig:SMD1}. Together They give a full description of the shower position.\cite{BEMC}
+As neutral particles, such as $\pi^0$, do not ionize the TPC gas, the BEMC is tasked with providing spacial resolution of such species. Instead of making the size of each tower of the BEMC comparable to the Moliere radius in the lead-plastic scintillator, a shower maximum detector (SMD) is added into the BEMC for spacial resolution. The SMD, set at about 5.6 radiation lengths at $\eta=0$, is composed of an aluminum plate with divots on either side. As seen in figure \ref{fig:SMD2}, a 50$\mu$m gold-plated tungsten anode wire lies in each divot. The wires run along the barrel. As $e+e^-$ pairs generated in the electromagnetic shower enter the gas volume, a large ionization signal is generated. Detection strips are located on the top and bottom faces of the aluminum plate. One set of strips runs parallel to the wires and provides the spacial distribution of the shower in the $\eta$ direction. The other set, running perpendicular to the wires provides the spacial distribution in the $\phi$ direction. A schematic of this is shown in figure \ref{fig:SMD1}. Together They give a full description of the shower position \cite{BEMC}.
 
 \begin{figure}
 \begin{center}
@@ -690,31 +703,43 @@ As neutral particles, such as $\pi^0$, do not ionize the TPC gas, the BEMC is ta
 \end{figure}
 
 \FloatBarrier
-\subsubsection[EEMC]{Endcap Electromagnetic Calorimeter}
+%\subsubsection[EEMC]{Endcap Electromagnetic Calorimeter}
 
 \subsubsection[TOF]{Time of Flight}
 
-To aid in particle identification STAR has a time of flight system. The system is composed of two different detectors, the Time of Flight Patch (TOFp) and the Pseudo Vertex Position Detector (pVPD).  Together these detectors allow for direct 2$\sigma$ $\pi$/$K$/$p$ identification for track momenta up to about 1.7 GeV/$c$.
+STAR has a time of flight system for particle identification. The system is composed of two different detectors, the Time of Flight Patch Detector (TOF) and the Vertex Position Detector (VPD).  Together these detectors allow for direct 2$\sigma$ $\pi$/$K$/$p$ identification for track momenta up to about 1.7 GeV/$c$.
 
-The pVPD is responsible for starting the clock of the time of flight system. It consists of two plastic scintillator detectors, one on either side of the STAR interaction region sitting 5.6 m away from the center of the STAR detector. Both are positioned very close to the beam pipe and detect very forward, high energy photons produced in the collision. The average of the time for both detectors to see this photon pulse is declared the ``start time" for the event. The scintillation light is read out by PMTs. The magnetic field strength near the pVPD is on the order of a few hundred Gauss. Because of this the PMTs are shielded on the sides with a steel outer shield, a nickel-Iron alloy intermediate shield, and finally a foil inner shield. They are also shielded from the front with a lead face sheet and a steel cap. A pVPD detector element is shown in figure \ref{fig:vpdDetector}. This is mounted to the beam pipe support structure as shown in figure \ref{fig:vpdAssembly}.    
+The VPD is responsible for starting the clock of the time of flight system. It consists of two plastic scintillator detectors, one on either side of the STAR interaction region sitting 5.6 m away from the center of the STAR detector. Both are positioned very close to the beam pipe and detect very forward, high energy photons produced in the collision. The average of the time for both detectors to see this photon pulse is declared the ``start time" for the event. The scintillation light is read out by PMTs. 
+%The magnetic field strength near the VPD is on the order of a few hundred Gauss. Because of this the PMTs are shielded on the sides with a steel outer shield, a nickel-Iron alloy intermediate shield, and finally a foil inner shield. They are also shielded from the front with a lead face sheet and a steel cap. A pVPD detector element is shown in figure \ref{fig:vpdDetector}. This is mounted to the beam pipe support structure as shown in figure \ref{fig:vpdAssembly}.    
 
-\begin{figure}
-\begin{center}
-\includegraphics[width = .8\textwidth]{vpdDetector}
-\caption[pVPD detector element]{A cross section of a pVPD detector element.}
-\label{fig:vpdDetector}
-\end{center}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width = .8\textwidth]{vpdDetector}
+%\caption[VPD detector element]{A cross section of a VPD detector element.}
+%\label{fig:vpdDetector}
+%\end{center}
+%\end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width = .6\textwidth]{vpdAssembly}
-\caption[pVPD Assembly]{The pVPD detector is mounted in the assembly.}
+\caption[VPD Assembly]{The VPD detector is mounted in the assembly.}
 \label{fig:vpdAssembly}
 \end{center}
 \end{figure}
 
-The pVPD starts the clock for the event and the TPCp stops it. The TPCp, shown in figure \ref{fig:starToF}, is again a scintillator/PMT detector. It covers about one unit in $\eta$ and about 1/60 of STAR's azimuthal coverage. It is encapsulated in an aluminum tray which is fastened to the outer field cage of the TPC at the 7 o'clock position. There are a total of 41 detector assemblies, each consisting of a 3.81 $\times$ 2 $\times$ 10 cm$^3$ BC420 plastic scintillator and a PMT. The PMTs are specially designed to work inside the STAR magnet.\cite{TOFppVPD}
+The VPD starts the clock for the event and the TOF stops it. The TOF uses the multi-gap resistive plate chamber (MRPC) technology developed by the ALICE group. The MRPC, shown in figure \ref{fig:MRPC}, is a stack of resistive plates with uniform gas gaps in between. Applying a high voltage to electrodes on the outer surface of the outer plates creates a strong electric field in each gap. An avalanche is generated in the gaps when a charged particle passes through. Copper pickup pads located outside the electrodes are used to read out the signal \cite{largeAreaTOF}. 
+\begin{figure}
+\begin{center}
+\includegraphics[width = 1\textwidth]{MRPC}
+\caption[multi-gap resistive plate chamber]{multi-gap resistive plate chamber (MRPC) used in the TOF detector \cite{largeAreaTOF}}
+\label{fig:MRPC}
+\end{center}
+\end{figure}
+
+The TOF consists of 120 "trays". Each tray, shown in figure \ref{fg:starToF}, consists of 32 MRPC modules. The trays are arranged at the outer radius of the TPC, 60 on the east side and 60 on the west. In total they cover two units in pseudorapidity ($-1<\eta<1$), and give full azimuthal coverage. The total time resolution of the TOF system is 87 ps \cite{largeAreaTOF}.   
+
+%The VPD starts the clock for the event and the TOF stops it. The TOF, shown in figure \ref{fig:starToF}, is again a scintillator/PMT detector. It covers about one unit in $\eta$ and about 1/60 of STAR's azimuthal coverage. It is encapsulated in an aluminum tray which is fastened to the outer field cage of the TPC at the 7 o'clock position. There are a total of 41 detector assemblies, each consisting of a 3.81 $\times$ 2 $\times$ 10 cm$^3$ BC420 plastic scintillator and a PMT. The PMTs are specially designed to work inside the STAR magnet.\cite{TOFppVPD}
 
 
 
@@ -722,7 +747,7 @@ The pVPD starts the clock for the event and the TPCp stops it. The TPCp, shown i
 \begin{figure}
 \begin{center}
 \includegraphics[width = .9\textwidth]{starToF}
-\caption[STAR Time of Flight System]{The Time of Flight Patch is located near the botom of the STAR detector at the 7 o'colck positioin. Also shown here are the two pVPD detectors on either side of the STAR detector.}
+\caption[STAR Time of Flight System]{One tray of the Time of Flight Detector is shown at the 7 o'cock position of STAR. Also shown here are the two VPD detectors on either side of the STAR detector.}
 \label{fig:starToF}
 \end{center}
 \end{figure}
@@ -741,23 +766,33 @@ Here $c$ is the speed of light, $\tau$ is the time measured by the time of fligh
 M^2 = \frac{p^2}{\beta^2} - 1
 \end{equation}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width = 1\textwidth]{TOFpid}
+\caption[Particle identification with TOF]{Particle mass resolution of TOF system. Solid lines correspond to tracks near $\eta=0$, dashed lines correspond to tracks near $\eta=1$. Particles can be identified with greater than $2\sigma$ confidence in areas where lines do not overlap \cite{largeAreaTOF}.}
+\label{fig:tofPID}
+\end{center}
+\end{figure}
 
-\section{STAR triggers?}
+
+
+%\section{STAR triggers?}
 
 \chapter{Theoretical Background for Analysis}
 \label{ch:theory}
 
-One of the most theoretically clean ways to access the transversity distribution function is through the observation of a single spin asymmetry(SSA) in a semi-inclusive deep inelastic scattering(SIDIS) process between transversely polarized and unpolarized protons where a hadron pair is detected\cite{bacchettaRadici2}. This thesis will be focused mainly on the case where the hadron pair is \pair. At leading twist, only one source of a SSA exists\cite{bacchettaRadici2}. 
+One of the most theoretically clean ways to access the transversity distribution function is through the observation of a single spin asymmetry(SSA) in a semi-inclusive deep inelastic scattering(SIDIS) process between transversely polarized and unpolarized protons where a hadron pair is detected \cite{bacchettaRadici2}. This thesis will be focused mainly on the case where the hadron pair is \pair. At leading twist, only one source of a SSA exists \cite{bacchettaRadici2}. 
 
-The process we are interested in is $p_ap_b^\uparrow \rightarrow \pi^+\pi^- + X$, where unpolarized proton $a$ collides with transversely polarized proton $b$ with spin $\boldsymbol{s}_b$. Outgoing pions with momentum $p_{h,1}$ for the positively charged pion and $p_{h,2}$ for the negatively charged pion are detected. The total pair momentum $\bm{P}_h$ is the sum of $p_{h,1}$ and $p_{h,2}$. The average of the pion momenta is defined as $\bm{R}= (p_{h,1}-p_{h,2})/2$.
+The process we are interested in is $p_ap_b^\uparrow \rightarrow \pi^+\pi^- + X$, where unpolarized proton $a$ collides with transversely polarized proton $b$ with spin $\boldsymbol{s}_b$. Outgoing pions with momentum $p_{h,1}$ for the positively charged pion and $p_{h,2}$ for the negatively charged pion are detected. The total pair momentum $\bm{P}_h$ is the sum of $p_{h,1}$ and $p_{h,2}$, the transverse component of which is written as $\ptpair$. 
+ The difference of the pion momenta is defined as $\bm{R}= (p_{h,1}-p_{h,2})/2$.
 
 The difference between cross sections when proton $b$ is polarized up and down can be written in a factorized form which includes the transversity distribution $h_1$, and the IFF, $H_1^{\sphericalangle}$.
 \begin{align}
-\label{eq:crossSecUT_3}
+\label{eq:crossSecUT}
 \text{d}\sigma^\uparrow - \text{d}\sigma^\downarrow = \text{d}\sigma_{UT} = 2\ptpair \sum_{a,b,c,d} |\boldsymbol{s}_b| \frac{|\boldsymbol{R}|}{\mpair}\sin(\phirs) & \int \frac{dx_a dx_b}{8\pi^2 z_c} f_1(x_a) h_1(x_b) \frac{d\Delta\hat{\sigma}_{a b^\uparrow \rightarrow c^\uparrow d}}{d\hat{t}} \nonumber \\ 
 &\times \sin\theta H_1^{\sphericalangle c} \left(\bar{z}_c,\cos\theta, {\mpair}^2\right) 
 \end{align}
-Where $\theta$ is the angle between $p_{h,1}$ in the center of mass frame of the pair and $\bm{P}_h$ in the lab frame. In the above expression, $\phirs = \phis-\phir$, where $\phis$ is the angle between the spin vector or proton $b$ and the scattering plane and $\phir$ is the angle between the scattering plane and the two hadron plane. These angles are shown in figure \ref{fig:angleDeff} and defined as\cite{bacchettaRadici2}
+Where $\theta$ is the angle between $p_{h,1}$ in the center of mass frame of the pair and $\bm{P}_h$ in the lab frame. In the above expression, $\phirs = \phis-\phir$, where $\phis$ is the angle between the spin vector of proton $b$ and the scattering plane and $\phir$ is the angle between the scattering plane and the two hadron plane. These angles are shown in figure \ref{fig:angleDeff} and defined as \cite{bacchettaRadici2}
 \begin{equation}
 \label{eq:angles}
 \begin{aligned}[c]
@@ -772,8 +807,7 @@ Where $\theta$ is the angle between $p_{h,1}$ in the center of mass frame of the
 \end{equation}
 where $\bm{P}_a$ and $\bm{P}_b$ are the momenta of protons $a$ and $b$ respectively.
 
-Also appearing in equation \ref{eq:crossSecUT_3} is the calculable hard scattering cross section of parton $a$ scattering off of transversly polarized parton $b$ into transversely polarized parton $c$ and parton $d$. Parton $c$ then goes on to fragment into a \pair pair keeping a fraction $z_c$ of quark $c$'s momentum as described by $H_1^{\sphericalangle}$. The transverse component of $\bm{P}_h$ is written as $\ptpair$. 
-
+Also appearing in equation \ref{eq:crossSecUT} is the calculable hard scattering cross section of parton $a$ scattering off of transversly polarized parton $b$ into transversely polarized parton $c$ and parton $d$. Parton $c$ then goes on to fragment into a \pair pair keeping a fraction $z_c$ of parton $c$'s momentum as described by $H_1^{\sphericalangle}$.
 
 
 %\begin{equation}
@@ -804,23 +838,22 @@ Comparing this to the cross section when both initial state quarks are unpolariz
 \label{eq:crossSecUU}
 d\sigma_{UU} = 2 \ptpair \sum_{a,b,c,d} \int \frac{dx_adx_b}{8\pi^2z_c} f_1^a(x_a)f_1^b(x_b) \frac{d\hat{\sigma}_{ab \rightarrow cd}}{d\hat{t}}D_1^c(\bar{z_c},\textnormal{cos}\theta_C,M_C^2)
 \end{equation}
-As similar as equations \ref{eq:crossSecUT_3} and \ref{eq:crossSecUU} look, there are some important differences worth noting. Obviously the polarization isn't there since we now are dealing with unpolarized scattering. The sinusoidal modulation has also disappeared. The transversity distribution has turned into a second unpolarized distribution, and the IFF has turned into $D_1^c$ which is the unpolarized counterpart to the IFF.   
+As similar as equations \ref{eq:crossSecUT} and \ref{eq:crossSecUU} look, there are some important differences worth noting. Obviously the polarization isn't there since we now are dealing with unpolarized scattering. The sinusoidal modulation has also disappeared. The transversity distribution has turned into a second unpolarized distribution, and the IFF has turned into $D_1^c$ which is the unpolarized counterpart to the IFF.   
 
-The most important thing to mention is that the sine modulation seen in unpolarized-polarized (U-T) scattering is not seen in unpolarized-unpolarized (U-U) scattering. This means that there is a bias to the yield of \pair pairs in U-T scattering when compared to U-U scattering. We can observe this by looking at the number of \pair pairs at a given value of $\phirs$ when the polarization of the proton beam is $\hat{y}$ vs the number when the polarization is $-\hat{y}$. We then normalize by the number we see at that value of $\phirs$ for U-U scattering, which gives the SSA $A_{UT}$.
+The most important thing to mention is that the sine modulation seen in unpolarized-transversely polarized (U-T) scattering is not seen in unpolarized-unpolarized (U-U) scattering. This means that there is a bias to the yield of \pair pairs in U-T scattering when compared to U-U scattering. We can observe this by looking at the number of \pair pairs at a given value of $\phirs$ when the polarization of the proton beam is $\hat{y}$ vs the number when the polarization is $-\hat{y}$. We then normalize by the number we see at that value of $\phirs$ for U-U scattering, which gives the Single Spin Asymmetry (SSA) $A_{UT}$.
 \begin{equation}
 \label{eq:asymCS}
 A_{UT} \sin (\phirs) =\frac{1}{|\bm{s}_b|} \frac{d\sigma^\uparrow - d\sigma^\downarrow}{d\sigma_{UU}}
 \end{equation}
 
-In our experiment we never scatter unpolarized protons, so we have to be cleaver about the cross section seen in the denominator of equation \ref{eq:asymCS}. If we sum over the two spin states we are left with the entire unpolarized cross section $d\sigma^\uparrow + d\sigma^\downarrow = d\sigma_{UU}$. Using this, equation \ref{eq:asymCS} can be rewritten as 
+In our experiment we never scatter unpolarized protons, so we have to be cleaver about the cross section seen in the denominator of equation \ref{eq:asymCS}. If we sum over the two spin states we are left with the entire unpolarized cross section $d\sigma^\uparrow + d\sigma^\downarrow = d\sigma_{UU}$. Using this, equation \ref{eq:asymCS} can be rewritten as \cite{bacchettaRadici2, BacchettaThesis, PhysRevLett.80.1166} 
 \begin{equation}
 \label{eq:SSA}
 A_{UT} \sin (\phirs) =\frac{1}{|\bm{s}_b|} \frac{d\sigma^\uparrow - d\sigma^\downarrow}{d\sigma^\uparrow + d\sigma^\downarrow}.
 \end{equation}
-[cite thesis and papers by Baccheta also maybe add the jeffe paper and info] 
-This is the only source of a single spin asymmetry at leading twist.\cite{bacchettaRadici2} It is important to keep this single spin asymmetry differential in many kinematic variables, otherwise it is likely to average to zero\cite{keepDifferential}. In this analysis the asymmetry will be kept differential in $\mpair$, $\etapair$, and $\ptpair$ individually. It will also be kept differential in two of the three variables simultaneously ($\mpair$/$\ptpair$, $\mpair$/$\etapair$, and $\ptpair$/$\etapair$). 
+This is the only source of a single spin asymmetry at leading twist \cite{bacchettaRadici2}. It is important to keep this single spin asymmetry differential in many kinematic variables, otherwise it is likely to average to zero \cite{keepDifferential}. In this analysis the asymmetry will be kept differential in $\mpair$, $\ptpair$, and $\etapair$ individually. $\etapair$ acts as a stand in for momentum fraction $x$ as partons with higher $x$ will fragment into hadrons at larger $\eta$. The asymmetry will also be kept differential in two of the three variables simultaneously (i.e. $\mpair$/$\ptpair$, $\mpair$/$\etapair$, and $\ptpair$/$\etapair$). 
 
-Important physics can be seen by preforming a partial wave expansion of the cross section\cite{partialWave}. Namely $\sin \theta H_1^\sphericalangle$ can be expanded. Looking at the first two terms in the expansion, 
+Important physics can be seen by preforming a partial wave expansion of the cross section \cite{partialWave}. Namely $\sin \theta H_1^\sphericalangle$ can be expanded. Looking at the first two terms in the expansion, 
 
 %\begin{equation}
 %\label{eq:partialwaveexpansion}
@@ -833,7 +866,7 @@ Important physics can be seen by preforming a partial wave expansion of the cros
 + &H^{\sphericalangle c}_{1,lt}(\bar{z_c},{\mpair}^2) \sin\theta \cos\theta
 \end{align}
 %
-The first term, S/P wave interference, is due to the interference between amplitudes for a decay into an $L = 0$  \pair pair and an $L = 1$ transversely polarized \pair pair. The second term, P/P wave interference, is due to the interference between amplitudes for a decay into an $L = 1$ \pair pair and an $L = 1$ transversely polarized \pair pair. The $L=1$ contributions comes from a \pair pair that went through a spin-1 intermediate state. One such intermediary we have the ability and statistics to look for is the $\rho$ meson. We expect there to be an enhancement in the IFF, and thus the asymmetry, in the invariant mass region of the $\rho$ (770 MeV). \cite{bacchettaRadici2, Tang}    
+The first term, S/P wave interference, is due to the interference between amplitudes for a decay into an $L = 0$  \pair pair and an $L = 1$ transversely polarized \pair pair. The second term, P/P wave interference, is due to the interference between amplitudes for a decay into an $L = 1$ \pair pair and an $L = 1$ transversely polarized \pair pair. The $L=1$ contributions comes from a \pair pair that went through a spin-1 intermediate state. One such intermediary we have the ability and statistics to look for is the $\rho$ meson. We expect there to be an enhancement in the IFF, and thus the asymmetry, in the invariant mass region of the $\rho$ (770 MeV) \cite{bacchettaRadici2, Tang}.    
 
 
 
@@ -848,13 +881,12 @@ The first term, S/P wave interference, is due to the interference between amplit
 
 
 
-\chapter{2006 analysis and sim}
+\chapter{2006 Analysis and Simulation}
 \label{chap:2006}
 
-The 2006 data set gave us the first glimpse of this asymmetry. The analysis of the 2006 data set was done by Anselm Vossen. The 2006 run had only a small integrated luminosity of 200 GeV transverse proton proton collisions. Due to this, the data set was small and the asymmetry couldn't be investigated as closely as was wanted. 
+The 2006 data set gave us the first glimpse of this asymmetry in $p+p$ collisions. The analysis of the 2006 data set was done mostly by Dr. Anselm Vossen. The 2006 run had a small integrated luminosity of 200 GeV transverse proton proton collisions.
 
-
-Figure \ref{fig:ansM} shows the asymmetry as a function of the pion pair invariant mass. As hinted from the theory there is an increase in the asymmetry around the $\rho$ meson mass for both forward and backward pairs. 
+Figure \ref{fig:ansM} shows the asymmetry as a function of the pion pair invariant mass. As hinted from the theory there is an increase in the asymmetry around the $\rho$ meson mass for both forward ($\eta > 0$) and backward pairs ($\eta < 0$). 
 
 
  \begin{figure}
@@ -866,7 +898,7 @@ Figure \ref{fig:ansM} shows the asymmetry as a function of the pion pair invaria
 \end{figure}
 
 
-Varying the opening angle of the pion pair grants access to the z dependence of the asymmetry. The fraction of the fragmenting quark momentum the pion pair retains, z, influences the size of the IFF. It turns out the asymmetry increases as the opening angle decreases as seen in figure \ref{fig:ansAng}.
+Varying the opening angle of the pion pair addresses the z dependence of the asymmetry. The fraction of the fragmenting quark momentum the pion pair retains, z, influences the size of the IFF. It turns out the asymmetry increases as the opening angle decreases as seen in figure \ref{fig:ansAng}.
 
  \begin{figure}
 \begin{center}
@@ -878,7 +910,7 @@ Varying the opening angle of the pion pair grants access to the z dependence of 
 
 As stated previously, $\etapair$ acts as a stand in for the momentum fraction of the polarized parton, as a larger partonic momentum fraction will cause the pion pair to be produced in a more forward direction. The asymmetry is plotted as a funtion of $\etapair$ in figure \ref{fig:ansEta}. As one might expect, the asymmetry is larger the more forward the pion pair is. This is explained by the fact that more forward pairs result from polarized partons with larger momentum fractions allowing for a larger spin transfer. 
 
-A supplemental analysis was done on simulated data to investigate partonic momentum fractions as well as biases introduced by STAR triggers. Figure \ref{fig:2006SimX} shows the momentum fraction of the fragmenting quark for pairs in the forward and reverse directions. A more in depth discussion for the analysis on the simulated data is given in chapters \ref{ch:embedAnal} and \ref{ch:}
+A supplemental analysis was done on simulated data to investigate partonic momentum fractions as well as biases introduced by STAR triggers. Figure \ref{fig:2006SimX} shows the momentum fraction of the fragmenting quark for pairs in the forward and reverse directions. A more in depth discussion for the analysis on the simulated data is given in chapter \ref{ch:trigBias}.
 
 
  \begin{figure}
@@ -1094,7 +1126,7 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\label{tab:1dbinPurity}
 \begin{minipage}{.33\linewidth}
 		%\caption{purity in $\etapair$}
-		\hline
+		%\hline
 \begin{tabularx}{\textwidth}{@{}YY@{}}
 		$\etapair$ & pion \%  \\
 		\hline
@@ -1112,7 +1144,7 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\end{minipage}%
 \begin{minipage}{.33\linewidth}
 		%\caption{purity in $\mpair$}
-		\hline
+		%\hline
 \begin{tabularx}{\textwidth}{@{}|YY|@{}}
 		$\mpair$ & pion \%  \\
 		\hline
@@ -1130,9 +1162,9 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\end{minipage}%
 \begin{minipage}{.33\linewidth}
 		%\caption{purity in $\ptpair$}
-		\hline
+		%\hline
 \begin{tabularx}{\textwidth}{@{}YY@{}}
-		$\etapair$ & pion  \% \\
+		$\ptpair$ & pion  \% \\
 		\hline
 3.00 $-$ 3.70 & 93\\
 3.70 $-$ 4.15 & 95\\
@@ -1155,7 +1187,7 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\label{tab:2dbinPurity}
 \begin{minipage}[t]{.33\linewidth}
 		%\caption{\small purity in \\ $\mpair,\etapair$}
-		\begin{tabular}[t]{ccc}\hline
+		\begin{tabular}[t]{ccc}%\hline
 		$\mpair$  & $\etapair$  & pion \%  \\
 		\hline
 0.00 $ - $ 0.40 & -2.00 $-$ -0.50 & 96\\
@@ -1188,7 +1220,7 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\end{minipage}%
 \begin{minipage}[t]{.33\linewidth}
 		%\caption{\small purity in \\ $\mpair,\ptpair$}
-		\begin{tabular}[t]{|ccc|}\hline
+		\begin{tabular}[t]{|ccc|}%\hline
 		$\mpair$  & $\ptpair$  & pion \%  \\
 		\hline
 3.00 $-$ 4.00 & 0.00 $-$ 0.40 & 94\\
@@ -1221,7 +1253,7 @@ Since the actual asymmetry analysis is binned in pion pair transverse momentum, 
 	\end{minipage}%
 \begin{minipage}[t]{.33\linewidth}
 		%\caption{\small purity in \\ $\ptpair,\etapair$}
-		\begin{tabular}[t]{ccc}\hline
+		\begin{tabular}[t]{ccc}%\hline
 		$\ptpair$  & $\etapair$  & pion \%  \\
 		\hline
 		3.00 $-$ 4.00 & -2.00 $-$ -0.50 & 95\\
@@ -1635,7 +1667,7 @@ This method requires the knowledge of beam luminosity. Since this is not known e
 
 \subsubsection{Cross Ratio Method}
 
-A more clever way of constructing the asymmetry is with the cross ratio method\cite{crossRatio}. I break the angle $\phi_{RS}$ up into 32 bins. I then count the number of pion pairs in that $\phi_{RS}$ bin when the polarization is up $N^\uparrow_{\phi_{RS}}$. 
+A more clever way of constructing the asymmetry is with the cross ratio method \cite{crossRatio}. I break the angle $\phi_{RS}$ up into 32 bins. I then count the number of pion pairs in that $\phi_{RS}$ bin when the polarization is up $N^\uparrow_{\phi_{RS}}$. 
 \begin{equation}
 \label{eq:nup}
 N^\uparrow_{\phi_{RS}} = L^\uparrow I_{\phi_{RS}}(\theta)\left[1+A_{UT}P\sin(\phi_{RS})\right]
@@ -1843,7 +1875,7 @@ E_{stat}^2 = \frac{1}{4}\frac{1}{\left(a+b\right)^4} \left[\frac{1}{\sqrt{\left<
 \times \left[b^2\left(N^\uparrow_{\phirs} + N^\downarrow_{\phirs+\pi}\right) + a^2 \left(N^\uparrow_{\phirs+\pi} +  N^\downarrow_{\phirs} \right)\right]
 \end{align}\\
 %
-Assuming all $N$s and polarizations are equal we see that the statistical error scales like $E_{stat}^2 \sim \frac{1}{p^2 N}$; the same as the simple treatment of the polarization.
+Assuming all $N$s and polarizations are equal we see that the statistical error scales like $E_{stat}^2 \sim \frac{1}{p^2 N}$; the same as the simple treatment of the error.
 
 The error from the polarization uncertainty is a little bit trickier to tackle. Since each pair comes with it's own polarization uncertainty, I want to use all of them. To do this I have to change how I write $\mathcal{E}$. Namely I want to explicitly write out how each pair's polarization comes in instead of the average polarization. 
 
@@ -1891,7 +1923,7 @@ At the end of the day this advanced treatment of the polarization made little to
 \begin{figure}
 \begin{center}
 \includegraphics[width = .7\textwidth]{polarizationErrorTestM}
-\caption[something]{The blue points are obtained by treating the asymmetry and error as in equations \ref{eq:crossRatio2} and \ref{eq:binError}. The red points are obtained using the advanced treatment of beam polarization in equations \ref{eq:crossRatioCode} and \ref{eq:errorAdv}.}
+\caption[Comparison of Error Bars]{The blue points are obtained by treating the asymmetry and error as in equations \ref{eq:crossRatio2} and \ref{eq:binError}. The red points are obtained using the advanced treatment of beam polarization in equations \ref{eq:crossRatioCode} and \ref{eq:errorAdv}.}
 \label{fig:advPolTreat}
 \end{center}
 \end{figure}
@@ -1927,7 +1959,7 @@ At the end of the day this advanced treatment of the polarization made little to
 \section{One Dimensional Kinematic Binning}
 
 
-The first step was to recreate the results of the 2006 study shown in chapter \ref{chap:2006}. The larger data set from the 2012 run allowed for more bins in each kinematic variable. The results can be seen in figures  \ref{fig:compPt}, \ref{fig:compMass}, and \ref{fig:compEta}. The dependence the asymmetry has on $\prpair$ and $\etapair$ are very agreeable between 2006 and 2012 analyses. The mass dependence shows the same trend but there are some differences between the two years. In 2006 a larger increase in asymmetry was seen around the $\rho$ mass than in 2012. Another difference is between the high mass point. In 2006 the highest mass has a decreased asymmetry when compared to the asymmetry near the $\rho$ but in 2012 the highest mass point shows a larger asymmetry. One possible reason could be that the high mass point in 2012 comes with a higher $\ptpair$ or $\etapair$ than it did in 2006 due to slightly different cuts. Since the asymmetry is highly dependent on these two, with a larger values correlated to higher asymmetries, this could cause the asymmetry to be increased. As we will see in section \ref{sec:2dresults}, this trend of a lower asymmetry in the high mass point is indeed a real phenomenon. When we plot the asymmetry in two dimensions, we see the high mass point at a lower asymmetry than the asymmetry near the $\rho$ region when holding $\ptpair$ constant (figure \ref{fig:2dPtMass}), as well as when we hold $\etapair$ constant (figure \ref{fig:2dMassEta}).    
+The first step was to recreate the results of the 2006 study shown in chapter \ref{chap:2006}. The larger data set from the 2012 run allowed for more bins in each kinematic variable. The results can be seen in figures  \ref{fig:compPt}, \ref{fig:compMass}, and \ref{fig:compEta}. The dependence the asymmetry has on $\ptpair$ and $\etapair$ are very agreeable between 2006 and 2012 analyses. The mass dependence shows the same trend but there are some differences between the two years. In 2006 a larger increase in asymmetry was seen around the $\rho$ mass than in 2012. Another difference is between the high mass point. In 2006 the highest mass has a decreased asymmetry when compared to the asymmetry near the $\rho$ but in 2012 the highest mass point shows a larger asymmetry. One possible reason could be that the high mass point in 2012 comes with a higher $\ptpair$ or $\etapair$ than it did in 2006 due to slightly different cuts. Since the asymmetry is highly dependent on these two, with a larger values correlated to higher asymmetries, this could cause the asymmetry to be increased. As we will see in section \ref{sec:2dresults}, this trend of a lower asymmetry in the high mass point is indeed a real phenomenon. When we plot the asymmetry in two dimensions, we see the high mass point at a lower asymmetry than the asymmetry near the $\rho$ region when holding $\ptpair$ constant (figure \ref{fig:2dPtMass}), as well as when we hold $\etapair$ constant (figure \ref{fig:2dMassEta}).    
 
 
 \begin{figure}
@@ -1954,12 +1986,6 @@ The first step was to recreate the results of the 2006 study shown in chapter \r
 \end{center}
 \end{figure}
 
-
-
-
-
-Show plots for AvM AvPt AvEta probably the full trigger set. Show different radius cuts and the average pt and M plots for the different radius cuts. Show how this gives access to a different z.
-
 Changing the radius changes the invariance mass, transverse momentum relationship. 
 \begin{equation}
 \label{eq:mptrelate}
@@ -1974,28 +2000,28 @@ Recall that z is the fraction of fragmenting quark momentum the pion pair retain
 z = \frac{\vec{P}_{\pip} + \vec{P}_{\pim}}{\vec{P}_q}
 \end{equation}
 %
-I'm not really sure this makes sense I need to think about it more.
+%I'm not really sure this makes sense I need to think about it more.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width = .8\textwidth]{allConeAsymsVs_Pt_8_24_15_HiEta}
-\caption[Asymmetry vs $\ptpair$ for different cone radii]{should replace with 3-26-15 version}
-\label{fig:allConesPt $\eta > 0$}
+\caption[Asymmetry vs $\ptpair$ for different cone radii]{Asymmetry vs $\ptpair$ for different cone radii $\etapair > 0$}
+\label{fig:allConesPt}
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width = .8\textwidth]{allConeAsymsVs_Mass_8_24_15_HiEta}
-\caption[Asymmetry vs $\mpair$ for different cone radii]{should replace with 3-26-15 version $\eta > 0$}
+\caption[Asymmetry vs $\mpair$ for different cone radii]{Asymmetry vs $\mpair$ for different cone radii $\etapair > 0$}
 \label{fig:allConesMass}
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = .7\textwidth]{allConesEta}
-\caption[Asymmetry vs $\etapair$ for different cone radii]{should replace with 3-26-15 version}
+\includegraphics[width = .8\textwidth]{allConeAsymsVs_Eta_8_24_15_FullEta}
+\caption[Asymmetry vs $\etapair$ for different cone radii]{Asymmetry vs $\etapair$ for different cone radii}
 \label{fig:allConesEta}
 \end{center}
 \end{figure}
@@ -2099,7 +2125,7 @@ Again, as figure \ref{fig:randomCharge} shows, we detect no asymmetry from rando
 \section{Two Dimensional Kinematic Binning}
 \label{sec:2dresults}
 
-We were lucky enough to get a much larger data set in 2012. This enabled us to not only break each kinematic variable up into more bins but also bin in multiple kinematic variables at once. This is ideal for extracting the transversity distribution. The asymmetry is determined as a function of $\mpair$ and $\etapair$ (figures \ref{fig:3dmassEta} and \ref{fig:2dMassEta}, as funtion of $\etapair$ and $\ptpair$ (figures \ref{fig:3dPtEta} and \ref{fig:2dPtEta}, and as a function of $\mpair$ and $\ptpair$ (figures \ref{fig:3dPtMass} and \ref{fig:2dPtMass}. A cone radius cut of 0.7 was used for all 2D binning measurements. There is an $\etapair > 0$ cut used when measuring the asymmetry as a function of $\mpair$ and $\ptpair$.  
+We were lucky enough to get a much larger data set in 2012. This enabled us to not only break each kinematic variable up into more bins but also bin in multiple kinematic variables at once. This is ideal for extracting the transversity distribution. The asymmetry is determined as a function of $\mpair$ and $\etapair$ (figures \ref{fig:3dmassEta} and \ref{fig:2dMassEta}, as funtion of $\etapair$ and $\ptpair$ (figures \ref{fig:3dPtEta} and \ref{fig:2dPtEta}, and as a function of $\mpair$ and $\ptpair$ (figures \ref{fig:3dPtMass} and \ref{fig:2dPtMass}. A cone radius cut of 0.7 was used for all 2D binning measurements. There is an $\etapair > 0$ cut used when measuring the asymmetry as a function of $\mpair$ and $\ptpair$. Again there is an increase in the asymmetry around the $\rho$ mass, and the highest mass bin shows decreased asymmetry as in the 2006 analysis.  
 
 %\begin{figure}
 %\begin{center}
@@ -2224,7 +2250,7 @@ The data was separated into two different sets, one for spin up collisions and o
   \caption{Data and unbinned maximum likilihood fit}
 \end{figure}
 
-The fitting procedure was done for pairs in the forward direction ($\eta > 0$) in the same invariant mass and transverse momentum bins as the previous section, and the results are shown below. Since the polarization was folded into the asymmetry coefficients in the fit the values here must be scaled by 1/polarization in order to make a fair comparison to the values shown in the previous section. The average polarization for data analyzed is <><><> .55. This puts the black points in figure \ref{fig:partWaveFits} very close to the values seen in the original two dimensional analysis. This makes sense because if $\theta$ is integrated over, as was the case in the previous 2D binning, only $A_{sp}$ would survive. The red points corresponding to the $A_{pp}$ coefficient seem to have no significant difference from zero, and if so, there is certainly no trend noticeable. If one looks hard enough, it seems the sign of $A_{pp}$ seems to be positive at lower invariant mass and negative at higher invariant mass, the change coming at the $\rho$ mass. However the size of the error bars make this not significant. 
+The fitting procedure was done for pairs in the forward direction ($\eta > 0$) in the same invariant mass and transverse momentum bins as the previous section, and the results are shown below. Since the polarization was folded into the asymmetry coefficients in the fit the values here must be scaled by 1/polarization in order to make a fair comparison to the values shown in the previous section. The average polarization for data analyzed is <><put in actual value><> .65. This puts the black points in figure \ref{fig:partWaveFits} very close to the values seen in the original two dimensional analysis. This makes sense because if $\theta$ is integrated over, as was the case in the previous 2D binning, only $A_{sp}$ would survive. The red points corresponding to the $A_{pp}$ coefficient seem to have no significant difference from zero, and if so, there is certainly no trend noticeable. If one looks hard enough, it seems the sign of $A_{pp}$ seems to be positive at lower invariant mass and negative at higher invariant mass, the change coming at the $\rho$ mass. However the size of the error bars make this not significant. 
 
 
 %
@@ -2272,12 +2298,11 @@ The fitting procedure was done for pairs in the forward direction ($\eta > 0$) i
 
 \section{Kaon Pion Pairs}
 
-We can perform a similar analysis for other dihadron pairs. In this section, we focus on kaon-pion pairs. Since K$\pi$ pairs go through an intermediate vector meson K$^*$(892) the IFF for the fragmentation of a transversely polarized quark into a kaon and a pion, and therefore observed asymmetry, should be enhanced in this range just like in the $\rho$ mass range for \pair pairs\cite{PhysRevLett.80.1166}. 
+We can perform a similar analysis for other dihadron pairs. In this section, we focus on kaon-pion pairs. Since K$\pi$ pairs go through an intermediate vector meson K$^*$(892) the IFF for the fragmentation of a transversely polarized quark into a kaon and a pion, and therefore observed asymmetry, should be enhanced in this range just like in the $\rho$ mass range for \pair pairs \cite{PhysRevLett.80.1166}. 
 
 In the \pair pair analysis the identification of pions was relatively simple and unimportant because there are so many more pions than kaons or protons. We attempt to cut as many kaons and protons out as possible and the rest just come as a dilution to the proton sample. It is a lot more difficult to look specifically for kaons. To do this we have to use the ToF as well as the ionization energy loss in the TPC to distinguish between pions and kaons accurately. Figure \ref{fig:tofNSigma} shows a heat map of the particle mass determined by the ToF vs the track $\nsigpi$ determined by the ionization energy loss. This is separated into 11 different track momentum ranges. Looking at the first momentum range in the upper left hand plot, the protons are seen as the faint green region at an time of flight mass of just under one GeV/c$^2$. As expected the pions are located around the bright red region at centered at $\nsigpi = 0$. The kaons are the faint green region just above and to the left of the pion region. Since protons are so far away from kaons and pions, they are easily removed from the sample with a ToF mass cut. However in order to correctly identify kaons, we need to make a distinction between them and pions. 
 
-Looking at each momentum bin individually I constructed the interface between the pion region and the kaon region. I then removed the overlap region where is was impossible to distinguish pions and kaons. This can be seen for the lowest momentum bin in figure \ref{tofnsigbiglines}. Everything between the white lines is not included in the analysis. Particles above the top line is taken to be a kaon, except for the clear proton region which is removed by a horizontal ToF mass cut. Everything below the bottom line is declared a pion. I was able to do this method with varying success for the first four momentum bins. The bin limits can be seen in table \ref{<#marker#>}. The pion, kaon, and sometimes even proton regions in the remaining bins overlapped too much and were not included in the analysis. As the track momentum increases the exclusion region between the white lines increases.    
-
+Looking at each momentum bin individually I constructed the interface between the pion region and the kaon region. I then removed the overlap region where is was impossible to distinguish pions and kaons. This can be seen for the lowest momentum bin in figure \ref{fig:tofnsiglines}. Everything between the white lines is not included in the analysis. Particles above the top line is taken to be a kaon, except for the clear proton region which is removed by a horizontal ToF mass cut. Everything below the bottom line is declared a pion. I was able to do this method with varying success for the first four momentum bins. The bin limits can be seen in table \ref{tab:pBinsKpi}. The pion, kaon, and sometimes even proton regions in the remaining bins overlapped too much and were not included in the analysis. As the track momentum increases the exclusion region between the white lines increases.    
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{TofNSigmaPiPbins_new}
@@ -2285,7 +2310,6 @@ Looking at each momentum bin individually I constructed the interface between th
 \label{fig:tofNSigma}
 \end{center}
 \end{figure}
-
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{tofnsigbiglines}
@@ -2293,7 +2317,6 @@ Looking at each momentum bin individually I constructed the interface between th
 \label{fig:tofnsiglines}
 \end{center}
 \end{figure}
-
 \begin{center}
 \begin{table}[h!]
 \caption{Track momentum bins for K$\pi$ analysis}
@@ -2307,7 +2330,7 @@ Looking at each momentum bin individually I constructed the interface between th
 \end{table}
 \end{center}
 
-Once $K\pi$ pairs are found, the analysis continues as in the \pair pair case, however with much lower statistics. <><><how much lower<><><><>? Figure \ref{fig:AutVMass_KPi} shows the asymmetry vs the invariant mass of the $K\pi$ pair for $\etakp > 0$. The lower limit on invariant mass in now 633.25 Mev/$c^2$ and the invariant mass bins are changed accordingly. The low statistics only allow for three invariant mass bins. Any more results in huge error bars in the largest bin. Just like the \pair pair scenario, we expect an enhancement to the asymmetry in the vicinity of $K^*$ mass (892 MeV/$c^2$). As you can see in figure \ref{fig:AutVMass_KPi}, we do see an enhancement in this mass region, however we also see a sizable negative asymmetry in the mass region directly before it. This leads me to believe the asymmetry near the $K^*$ mass may just be do to statistical fluctuations and our low statistics. More investigation is needed to make a clear statement. 
+Once $K\pi$ pairs are found, the analysis continues as in the \pair pair case, however with much lower statistics. Figure \ref{fig:AutVMass_KPi} shows the asymmetry vs the invariant mass of the $K\pi$ pair for $\etakp > 0$. The lower limit on invariant mass in now 633.25 Mev/$c^2$ and the invariant mass bins are changed accordingly. The low statistics only allow for three invariant mass bins. Any more results in huge error bars in the largest bin. Just like the \pair pair scenario, we expect an enhancement to the asymmetry in the vicinity of $K^*$ mass (892 MeV/$c^2$). As you can see in figure \ref{fig:AutVMass_KPi}, we do see an enhancement in this mass region, however we also see a sizable negative asymmetry in the mass region directly before it. This leads me to believe the asymmetry near the $K^*$ mass may just be do to statistical fluctuations and our low statistics. More investigation is needed to make a clear statement. 
 
 \begin{figure}
 \begin{center}
@@ -2320,7 +2343,7 @@ Once $K\pi$ pairs are found, the analysis continues as in the \pair pair case, h
 
 We know from the \pair pair case that the asymmetry should increase with the pseudorapidity of the pair. In figure \ref{fig:AutVMass_KPi} we had a lower $\etakp$ limit of 0. If we increased the lower limit, we should see an increase in the asymmetry. Seeing an increase in the asymmetry near the $K^*$ could be evidence that the asymmetry is real and not a product of statistical fluctuations. The asymmetry when $\etakp > 0.5$ can be seen in figure \ref{fig:AutVMass_KPi_eta050}. 
 
-The third mass bin has an asymmetry of 0.0530 $\pm$ 0.0197 when the lower $\etakp$ limit is 0.5 and 0.0371 $\pm$ 0.0105 when the lower $\etakp$ limit is 0. This suggests the asymmetry in this bin is an actual asymmetry. Not only that but the asymmetry in the second bin has decreased when the lower $\etakp$ limit was changed to 0.5. 
+The third mass bin has an asymmetry of 0.0530 $\pm$ 0.0197 when the lower $\etakp$ limit is 0.5 and 0.0371 $\pm$ 0.0105 when the lower $\etakp$ limit is 0. This suggests the asymmetry in this bin is physical as opposed to just statistical fluctuations. Not only that but the asymmetry in the second bin has decreased when the lower $\etakp$ limit was changed to 0.5. 
 
 \begin{figure}
 \begin{center}
@@ -2386,12 +2409,12 @@ Predictions for $A_{UT}$ as a function of invariant mass of the \pair pair is sh
 \FloatBarrier
 \subsection{Predictions for 2012}
 
-The predictions for 2012 are done in the same manor as for 2006. With more data from the 2012 production, these predictions can be put to another test. Figure \ref{fig:A_eta_calc} shows the prediction values of $A_{UT}$ as a function of $\etapair$ and the 2012 data points shown in figure \ref{fig:compEta}. This time the predicted 68\% replica band perfectly predicts the data. In figure \ref{fig:A_Mh_eta-neg_calc}, the prediction for $A_{UT}$ is shown as a function of $\mpair$ along with the 2012 data for \pair pairs in the direction of the polarized beam ($\etapair < 0$ in the convention of the authors). There is a slight discrepancy between the prediction and the 2012 data at larger $\mpair$. There is also one data point from 2012 at higher $\mpair$ that has been left off. This data point, which can be see in figure \ref{fig:compM} at $\mpair > 1.2$, would disagree with the prediction even further. Figure \ref{fig:A_Mh_eta-pos_calc} shows the prediction for pairs in the backwards direction as the polarized beam. Here the predictions do a better job.    
+The predictions for 2012 are done in the same manor as for 2006. With more data from the 2012 production, these predictions can be put to another test. Figure \ref{fig:A_eta_calc} shows the prediction values of $A_{UT}$ as a function of $\etapair$ and the 2012 data points shown in figure \ref{fig:compEta}. This time the predicted 68\% replica band perfectly predicts the data. In figure \ref{fig:A_Mh_eta-neg_calc}, the prediction for $A_{UT}$ is shown as a function of $\mpair$ along with the 2012 data for \pair pairs in the direction of the polarized beam ($\etapair < 0$ in the convention of the authors). There is a slight discrepancy between the prediction and the 2012 data at larger $\mpair$. There is also one data point from 2012 at higher $\mpair$ that has been left off. This data point, which can be see in figure \ref{fig:compMass} at $\mpair > 1.2$, would disagree with the prediction even further. Figure \ref{fig:A_Mh_eta-pos_calc} shows the prediction for pairs in the backwards direction from the polarized beam. Here the predictions do a better job.    
 
 The accuracy seen in these predictions, although not incredible, hints at the universality of the transversity distribution function. In the near future, the transversity distribution will be able to be extracted from a global fit of the STAR data in conjunction with the HERMES/COMPASS data \cite{univTrans}. This should give us the best understanding of the transversity distribution to date.  
 
 
-IS THIS NOW USING THE 2006 DATA TO EXTRACT/MAKE PREDICTIONS ALONG WITH THE ep AND ee STUFF???
+%IS THIS NOW USING THE 2006 DATA TO EXTRACT/MAKE PREDICTIONS ALONG WITH THE ep AND ee STUFF???
 
 
 \begin{figure}
@@ -2434,7 +2457,7 @@ The first step was selecting which Pythia tune produced particle yields most com
 \end{center}
 \end{figure}
 
-One idea is to decrease the value of the primordial $k_T$ in Perugia 0 which has a high default $k_T$ value at 2 Gev/c. This parameter accounts for the infrared effects.\cite{pythTunes} The suitability of Perugia 0 is drastically increased when changing this parameter from 2 GeV/c to 0.5 GeV/c as seen in figure \ref{fig:pythTunesLowKt}. It seems as though this corrected disagreement at low $p_T$ as caused Perugia 0 to be satisfactory fit at higher $p_T$ as well. In fact it worked so well that the primordial $k_T$ was decreased to 0.5 GeV/c in Perugia 2012 and Perugia 6 as well. As with Perugia 0, low $p_T$ yields for Perugia 2012 is corrected with the change in primordial $k_T$ \ref{multLowKt}. It is possible that, although it corrects particle yields, altering the default primordial $k_T$ value could have adverse effects on different properties of the data. Because of this we want to keep in mind the Pythia tune which performs best at nominal $k_T$. This seems to be Perugia 2012 as seen in figure \ref{fig:piPlusPythTunes}.
+One idea is to decrease the value of the primordial $k_T$ in Perugia 0 which has a high default $k_T$ value at 2 Gev/c. This parameter accounts for the infrared effects \cite{pythTunes}. The suitability of Perugia 0 is drastically increased when changing this parameter from 2 GeV/c to 0.5 GeV/c as seen in figure \ref{fig:pythTunesLowKt}. It seems as though this corrected disagreement at low $p_T$ as caused Perugia 0 to be satisfactory fit at higher $p_T$ as well. In fact it worked so well that the primordial $k_T$ was decreased to 0.5 GeV/c in Perugia 2012 and Perugia 6 as well. As with Perugia 0, low $p_T$ yields for Perugia 2012 is corrected with the change in primordial $k_T$ \ref{fig:multLowKt}. It is possible that, although it corrects particle yields, altering the default primordial $k_T$ value could have adverse effects on different properties of the data. Because of this we want to keep in mind the Pythia tune which performs best at nominal $k_T$. This seems to be Perugia 2012 as seen in figure \ref{fig:piPlusPythTunes}.
 
 \begin{figure}
 \begin{center}
@@ -2495,16 +2518,16 @@ So the two candidates are Perugia 0 with PDF set CT10 and reduced $k_T$ and Peru
 \label{fig:jetSubprocessFractions}
 \end{figure}
 
-\chapter{Embedding Analysis}
-\label{ch:embedAnal}
+%\chapter{Embedding Analysis}
+%\label{ch:embedAnal}
+%
+%not sure if I want to split this up into two sections like I have. embedding analysis and trigger bias.
+%
 
-not sure if I want to split this up into two sections like I have. embedding analysis and trigger bias.
-
-
-\chapter{Trigger Bias}
+\chapter{Trigger Bias and Embedding Analysis}
 \label{ch:trigBias}
 
-The way the STAR triggers select events introduces a bias to our sample. It does this in two ways. First, it can trigger on quark jets and gluon jets in a different ratio than they are produced in the collisions. This is important to quantify because theorist interpreting results from this analysis will assume the ratio of quark jets to gluon jets is consistent with the ratio they are produced at. To investigate how this affects the asymmetry we will start by revisiting equations \ref{eq:nup} through \ref{eq:nupphi}. It is convenient two introduce two variables $g = N_g/2\pi$ and $q = N_q/2\pi$, where $N_g$ and $N_q$ are the total number of pion pairs from gluons jets and quark jets at any angle $\phirs$. Since pairs from gluons don't contribute to the asymmetry, the number of gluon jets at any angle $\phirs$ is simply g. There is no sinusoidal modulation as you would see with the number of pion pairs from fragmenting quarks. Using these two new variables, equations \ref{eq:nup} through \ref{eq:nupphi} can be rewritten as:
+The way the STAR triggers select events introduces a bias to our sample. It does this in two ways. First, it can trigger on quark jets and gluon jets in a different ratio than they are produced in the collisions. This is important to quantify because theorist interpreting results from this analysis will assume the ratio of quark jets to gluon jets is consistent with the ratio they are produced at. To investigate how this affects the asymmetry we will start by revisiting equations \ref{eq:nup} through \ref{eq:nupphi}. It is convenient two introduce two variables $g = N_g/2\pi$ and $q = N_q/2\pi$, where $N_g$ and $N_q$ are the total number of pion pairs from gluons jets and quark jets at any angle $\phirs$. Since pairs from gluons don't contribute to the asymmetry \cite{Jaffe:spinProc, bacchettaRadici2}, the number of gluon jets at any angle $\phirs$ is simply g. There is no sinusoidal modulation as you would see with the number of pion pairs from fragmenting quarks. Using these two new variables, equations \ref{eq:nup} through \ref{eq:nupphi} can be rewritten as:
 
 \begin{equation}
 \label{eq:nupTB}
@@ -2539,13 +2562,13 @@ From this, it can be seen that
 \begin{equation}
 A_{UT}^{experiment}  = \frac{f_q^{detector}}{f_q^{collision}} A_{UT}^{theory}.
 \end{equation}
-The values for $f_q^{detector}$ and $f_q^{theory}$ can be determined from simulated data.
+The values for $f_q^{detector}$ and $f_q^{theory}$ can be determined from simulated data. ADD PLOT AND TALK ABOUT IT
 
 
 
-The main triggers I use in my analysis are the barrel jet patch triggers and the barrel high tower triggers. These triggers are fired when there is substantial amount of energy deposited in one or a group of towers. This happens when there are a lot of high energy neutral particles in the event. This occurs more often in gluon jets than in quark jets. This causes the data set to have a skewed percentage of quark and gluon jets than in reality. Since gluons carry no transversity <><><><, the results actually under represent the asymmetry. In reality, if the number of quark and gluon jets matched with the actual production. we would see a higher asymmetry. <><><> To account for this, we use embedding to determine the ratio of pion pairs coming from a quark to the number coming from a gluon when the triggers are turned off and when the triggers are turned on. This gives us an idea of how the triggers bias the data set. 
+%The main triggers I use in my analysis are the barrel jet patch triggers and the barrel high tower triggers. These triggers are fired when there is substantial amount of energy deposited in one or a group of towers. This happens when there are a lot of high energy neutral particles in the event. This occurs more often in gluon jets than in quark jets. This causes the data set to have a skewed percentage of quark and gluon jets than in reality. Since gluons carry no transversity <><><><, the results actually under represent the asymmetry. In reality, if the number of quark and gluon jets matched with the actual production. we would see a higher asymmetry. <><><> To account for this, we use embedding to determine the ratio of pion pairs coming from a quark to the number coming from a gluon when the triggers are turned off and when the triggers are turned on. This gives us an idea of how the triggers bias the data set. 
 
-The trigger also has a bias toward events coming from a parton carrying a high momentum fraction $x$. A quark with a large $x$ will lead to outgoing products carrying more energy. These products will have a greater chance to be over the trigger threshold. This bias toward higher $X$ events is shown in figure \ref{fig:TriggerBiasXHiQualColor}. 
+The trigger also has a bias toward events coming from a parton carrying a high momentum fraction $x$. A quark with a large $x$ will lead to outgoing products carrying more energy. These products will have a greater chance to be over the trigger threshold. This bias toward higher $x$ events is shown in figure \ref{fig:TriggerBiasXHiQualColor}. 
 
 \begin{figure}
 \begin{center}

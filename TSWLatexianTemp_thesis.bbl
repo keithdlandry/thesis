@@ -2636,6 +2636,33 @@
   \warn{\item Invalid format of field 'month'}
 \endentry
 
+\entry{Jaffe:spinProc}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jaffe}{J.}%
+     {Robert~L.}{R.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JRL2}
+  \strng{fullhash}{JRL2}
+  \field{sortinit}{J}
+  \field{booktitle}{{The spin structure of the nucleon. Proceedings,
+  International School of Nucleon Structure, 1st Course, Erice, Italy, August
+  3-10, 1995}}
+  \verb{doi}
+  \verb 10.1007/BFb0105860
+  \endverb
+  \verb{eprint}
+  \verb hep-ph/9602236
+  \endverb
+  \field{note}{[Lect. Notes Phys.496,178(1997)]}
+  \field{title}{{Spin, twist and hadron structure in deep inelastic processes}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{hep-ph}
+  \field{year}{1996}
+\endentry
+
 \entry{jaffeWhereSpinComeFrom}{article}{}
   \name{author}{1}{}{%
     {{}%

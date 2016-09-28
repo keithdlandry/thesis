@@ -97,33 +97,32 @@ The transversity distribution $h_1(x)$ of a transversely polarized proton descri
 
 \chapter*{Acronyms}
  
-\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries The longest label}]
-\item[IFF] interference fragmentation function
-\item[QCD] quantum chromo dynamics
-\item[STAR] Solenoid Tracker at RHIC
-\item[RHIC] Relativistic Heavy Ion Collider
-\item[DIS] deep inelastic scattering
-\item[pdf] parton distribution function
-\item[HERMES] ?????
-\item[SLAC] Stanford Linear Accelerator Center
-\item[Belle] ??????
-\item[BNL] Brookhaven National Laboratory 
-\item[AGS] Alternating Gradient Synchrotron
-\item[LINAC]
-\item[OPPIS] optically pumped proton ion source
-\item[TPC] Time Projection Chamber
-\item[BEMC] Barrel Electromagnetic Calorimeter
-\item[PMT] photomultiplier tube
-\item[SMD] Shower Maximum detector
-\item[ToF] Time of Flight
-\item[VPD]
-\item[BBC] Beam Beam Counter
-\item[JP] Jet Patch trigger
-\item[HT] High Tower trigger
-\item[UU] unpolarized-unpolarized
-\item[UT] unpolarized-transversely polarized
-
-\end{description}
+%\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries The longest label}]
+%\item[IFF] interference fragmentation function
+%\item[QCD] quantum chromo dynamics
+%\item[STAR] Solenoid Tracker at RHIC
+%\item[RHIC] Relativistic Heavy Ion Collider
+%\item[DIS] deep inelastic scattering
+%\item[pdf] parton distribution function
+%\item[HERMES] ?????
+%\item[SLAC] Stanford Linear Accelerator Center
+%\item[Belle] ??????
+%\item[BNL] Brookhaven National Laboratory 
+%\item[AGS] Alternating Gradient Synchrotron
+%\item[LINAC]
+%\item[OPPIS] optically pumped proton ion source
+%\item[TPC] Time Projection Chamber
+%\item[BEMC] Barrel Electromagnetic Calorimeter
+%\item[PMT] photomultiplier tube
+%\item[SMD] Shower Maximum detector
+%\item[ToF] Time of Flight
+%\item[VPD]
+%\item[BBC] Beam Beam Counter
+%\item[JP] Jet Patch trigger
+%\item[HT] High Tower trigger
+%\item[UU] unpolarized-unpolarized
+%\item[UT] unpolarized-transversely polarized
+%\end{description}
 
 
 
@@ -690,7 +689,7 @@ As neutral particles, such as $\pi^0$, do not ionize the TPC gas, the BEMC is ta
 \end{figure}
 
 \FloatBarrier
-\subsubsection[EEMC]{Endcap Electromagnetic Calorimeter}
+%\subsubsection[EEMC]{Endcap Electromagnetic Calorimeter}
 
 \subsubsection[TOF]{Time of Flight}
 
@@ -742,7 +741,7 @@ M^2 = \frac{p^2}{\beta^2} - 1
 \end{equation}
 
 
-\section{STAR triggers?}
+%\section{STAR triggers?}
 
 \chapter{Theoretical Background for Analysis}
 \label{ch:theory}
@@ -1954,12 +1953,6 @@ The first step was to recreate the results of the 2006 study shown in chapter \r
 \end{center}
 \end{figure}
 
-
-
-
-
-Show plots for AvM AvPt AvEta probably the full trigger set. Show different radius cuts and the average pt and M plots for the different radius cuts. Show how this gives access to a different z.
-
 Changing the radius changes the invariance mass, transverse momentum relationship. 
 \begin{equation}
 \label{eq:mptrelate}
@@ -1974,7 +1967,7 @@ Recall that z is the fraction of fragmenting quark momentum the pion pair retain
 z = \frac{\vec{P}_{\pip} + \vec{P}_{\pim}}{\vec{P}_q}
 \end{equation}
 %
-I'm not really sure this makes sense I need to think about it more.
+%I'm not really sure this makes sense I need to think about it more.
 
 \begin{figure}
 \begin{center}
@@ -2276,8 +2269,7 @@ We can perform a similar analysis for other dihadron pairs. In this section, we 
 
 In the \pair pair analysis the identification of pions was relatively simple and unimportant because there are so many more pions than kaons or protons. We attempt to cut as many kaons and protons out as possible and the rest just come as a dilution to the proton sample. It is a lot more difficult to look specifically for kaons. To do this we have to use the ToF as well as the ionization energy loss in the TPC to distinguish between pions and kaons accurately. Figure \ref{fig:tofNSigma} shows a heat map of the particle mass determined by the ToF vs the track $\nsigpi$ determined by the ionization energy loss. This is separated into 11 different track momentum ranges. Looking at the first momentum range in the upper left hand plot, the protons are seen as the faint green region at an time of flight mass of just under one GeV/c$^2$. As expected the pions are located around the bright red region at centered at $\nsigpi = 0$. The kaons are the faint green region just above and to the left of the pion region. Since protons are so far away from kaons and pions, they are easily removed from the sample with a ToF mass cut. However in order to correctly identify kaons, we need to make a distinction between them and pions. 
 
-Looking at each momentum bin individually I constructed the interface between the pion region and the kaon region. I then removed the overlap region where is was impossible to distinguish pions and kaons. This can be seen for the lowest momentum bin in figure \ref{tofnsigbiglines}. Everything between the white lines is not included in the analysis. Particles above the top line is taken to be a kaon, except for the clear proton region which is removed by a horizontal ToF mass cut. Everything below the bottom line is declared a pion. I was able to do this method with varying success for the first four momentum bins. The bin limits can be seen in table \ref{<#marker#>}. The pion, kaon, and sometimes even proton regions in the remaining bins overlapped too much and were not included in the analysis. As the track momentum increases the exclusion region between the white lines increases.    
-
+Looking at each momentum bin individually I constructed the interface between the pion region and the kaon region. I then removed the overlap region where is was impossible to distinguish pions and kaons. This can be seen for the lowest momentum bin in figure \ref{fig:tofnsigbiglines}. Everything between the white lines is not included in the analysis. Particles above the top line is taken to be a kaon, except for the clear proton region which is removed by a horizontal ToF mass cut. Everything below the bottom line is declared a pion. I was able to do this method with varying success for the first four momentum bins. The bin limits can be seen in table \ref{tab:pBinsKpi}. The pion, kaon, and sometimes even proton regions in the remaining bins overlapped too much and were not included in the analysis. As the track momentum increases the exclusion region between the white lines increases.    
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{TofNSigmaPiPbins_new}
@@ -2285,7 +2277,6 @@ Looking at each momentum bin individually I constructed the interface between th
 \label{fig:tofNSigma}
 \end{center}
 \end{figure}
-
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1\textwidth]{tofnsigbiglines}
@@ -2293,7 +2284,6 @@ Looking at each momentum bin individually I constructed the interface between th
 \label{fig:tofnsiglines}
 \end{center}
 \end{figure}
-
 \begin{center}
 \begin{table}[h!]
 \caption{Track momentum bins for K$\pi$ analysis}
@@ -2307,7 +2297,7 @@ Looking at each momentum bin individually I constructed the interface between th
 \end{table}
 \end{center}
 
-Once $K\pi$ pairs are found, the analysis continues as in the \pair pair case, however with much lower statistics. <><><how much lower<><><><>? Figure \ref{fig:AutVMass_KPi} shows the asymmetry vs the invariant mass of the $K\pi$ pair for $\etakp > 0$. The lower limit on invariant mass in now 633.25 Mev/$c^2$ and the invariant mass bins are changed accordingly. The low statistics only allow for three invariant mass bins. Any more results in huge error bars in the largest bin. Just like the \pair pair scenario, we expect an enhancement to the asymmetry in the vicinity of $K^*$ mass (892 MeV/$c^2$). As you can see in figure \ref{fig:AutVMass_KPi}, we do see an enhancement in this mass region, however we also see a sizable negative asymmetry in the mass region directly before it. This leads me to believe the asymmetry near the $K^*$ mass may just be do to statistical fluctuations and our low statistics. More investigation is needed to make a clear statement. 
+Once $K\pi$ pairs are found, the analysis continues as in the \pair pair case, however with much lower statistics. Figure \ref{fig:AutVMass_KPi} shows the asymmetry vs the invariant mass of the $K\pi$ pair for $\etakp > 0$. The lower limit on invariant mass in now 633.25 Mev/$c^2$ and the invariant mass bins are changed accordingly. The low statistics only allow for three invariant mass bins. Any more results in huge error bars in the largest bin. Just like the \pair pair scenario, we expect an enhancement to the asymmetry in the vicinity of $K^*$ mass (892 MeV/$c^2$). As you can see in figure \ref{fig:AutVMass_KPi}, we do see an enhancement in this mass region, however we also see a sizable negative asymmetry in the mass region directly before it. This leads me to believe the asymmetry near the $K^*$ mass may just be do to statistical fluctuations and our low statistics. More investigation is needed to make a clear statement. 
 
 \begin{figure}
 \begin{center}
@@ -2386,7 +2376,7 @@ Predictions for $A_{UT}$ as a function of invariant mass of the \pair pair is sh
 \FloatBarrier
 \subsection{Predictions for 2012}
 
-The predictions for 2012 are done in the same manor as for 2006. With more data from the 2012 production, these predictions can be put to another test. Figure \ref{fig:A_eta_calc} shows the prediction values of $A_{UT}$ as a function of $\etapair$ and the 2012 data points shown in figure \ref{fig:compEta}. This time the predicted 68\% replica band perfectly predicts the data. In figure \ref{fig:A_Mh_eta-neg_calc}, the prediction for $A_{UT}$ is shown as a function of $\mpair$ along with the 2012 data for \pair pairs in the direction of the polarized beam ($\etapair < 0$ in the convention of the authors). There is a slight discrepancy between the prediction and the 2012 data at larger $\mpair$. There is also one data point from 2012 at higher $\mpair$ that has been left off. This data point, which can be see in figure \ref{fig:compM} at $\mpair > 1.2$, would disagree with the prediction even further. Figure \ref{fig:A_Mh_eta-pos_calc} shows the prediction for pairs in the backwards direction as the polarized beam. Here the predictions do a better job.    
+The predictions for 2012 are done in the same manor as for 2006. With more data from the 2012 production, these predictions can be put to another test. Figure \ref{fig:A_eta_calc} shows the prediction values of $A_{UT}$ as a function of $\etapair$ and the 2012 data points shown in figure \ref{fig:compEta}. This time the predicted 68\% replica band perfectly predicts the data. In figure \ref{fig:A_Mh_eta-neg_calc}, the prediction for $A_{UT}$ is shown as a function of $\mpair$ along with the 2012 data for \pair pairs in the direction of the polarized beam ($\etapair < 0$ in the convention of the authors). There is a slight discrepancy between the prediction and the 2012 data at larger $\mpair$. There is also one data point from 2012 at higher $\mpair$ that has been left off. This data point, which can be see in figure \ref{fig:compMass} at $\mpair > 1.2$, would disagree with the prediction even further. Figure \ref{fig:A_Mh_eta-pos_calc} shows the prediction for pairs in the backwards direction from the polarized beam. Here the predictions do a better job.    
 
 The accuracy seen in these predictions, although not incredible, hints at the universality of the transversity distribution function. In the near future, the transversity distribution will be able to be extracted from a global fit of the STAR data in conjunction with the HERMES/COMPASS data \cite{univTrans}. This should give us the best understanding of the transversity distribution to date.  
 
@@ -2495,16 +2485,16 @@ So the two candidates are Perugia 0 with PDF set CT10 and reduced $k_T$ and Peru
 \label{fig:jetSubprocessFractions}
 \end{figure}
 
-\chapter{Embedding Analysis}
-\label{ch:embedAnal}
+%\chapter{Embedding Analysis}
+%\label{ch:embedAnal}
+%
+%not sure if I want to split this up into two sections like I have. embedding analysis and trigger bias.
+%
 
-not sure if I want to split this up into two sections like I have. embedding analysis and trigger bias.
-
-
-\chapter{Trigger Bias}
+\chapter{Trigger Bias from Embedding}
 \label{ch:trigBias}
 
-The way the STAR triggers select events introduces a bias to our sample. It does this in two ways. First, it can trigger on quark jets and gluon jets in a different ratio than they are produced in the collisions. This is important to quantify because theorist interpreting results from this analysis will assume the ratio of quark jets to gluon jets is consistent with the ratio they are produced at. To investigate how this affects the asymmetry we will start by revisiting equations \ref{eq:nup} through \ref{eq:nupphi}. It is convenient two introduce two variables $g = N_g/2\pi$ and $q = N_q/2\pi$, where $N_g$ and $N_q$ are the total number of pion pairs from gluons jets and quark jets at any angle $\phirs$. Since pairs from gluons don't contribute to the asymmetry, the number of gluon jets at any angle $\phirs$ is simply g. There is no sinusoidal modulation as you would see with the number of pion pairs from fragmenting quarks. Using these two new variables, equations \ref{eq:nup} through \ref{eq:nupphi} can be rewritten as:
+The way the STAR triggers select events introduces a bias to our sample. It does this in two ways. First, it can trigger on quark jets and gluon jets in a different ratio than they are produced in the collisions. This is important to quantify because theorist interpreting results from this analysis will assume the ratio of quark jets to gluon jets is consistent with the ratio they are produced at. To investigate how this affects the asymmetry we will start by revisiting equations \ref{eq:nup} through \ref{eq:nupphi}. It is convenient two introduce two variables $g = N_g/2\pi$ and $q = N_q/2\pi$, where $N_g$ and $N_q$ are the total number of pion pairs from gluons jets and quark jets at any angle $\phirs$. Since pairs from gluons don't contribute to the asymmetry \cite{Jaffe:spinProc, bacchettaRadici2}, the number of gluon jets at any angle $\phirs$ is simply g. There is no sinusoidal modulation as you would see with the number of pion pairs from fragmenting quarks. Using these two new variables, equations \ref{eq:nup} through \ref{eq:nupphi} can be rewritten as:
 
 \begin{equation}
 \label{eq:nupTB}
@@ -2539,11 +2529,11 @@ From this, it can be seen that
 \begin{equation}
 A_{UT}^{experiment}  = \frac{f_q^{detector}}{f_q^{collision}} A_{UT}^{theory}.
 \end{equation}
-The values for $f_q^{detector}$ and $f_q^{theory}$ can be determined from simulated data.
+The values for $f_q^{detector}$ and $f_q^{theory}$ can be determined from simulated data. ADD PLOT AND TALK ABOUT IT
 
 
 
-The main triggers I use in my analysis are the barrel jet patch triggers and the barrel high tower triggers. These triggers are fired when there is substantial amount of energy deposited in one or a group of towers. This happens when there are a lot of high energy neutral particles in the event. This occurs more often in gluon jets than in quark jets. This causes the data set to have a skewed percentage of quark and gluon jets than in reality. Since gluons carry no transversity <><><><, the results actually under represent the asymmetry. In reality, if the number of quark and gluon jets matched with the actual production. we would see a higher asymmetry. <><><> To account for this, we use embedding to determine the ratio of pion pairs coming from a quark to the number coming from a gluon when the triggers are turned off and when the triggers are turned on. This gives us an idea of how the triggers bias the data set. 
+%The main triggers I use in my analysis are the barrel jet patch triggers and the barrel high tower triggers. These triggers are fired when there is substantial amount of energy deposited in one or a group of towers. This happens when there are a lot of high energy neutral particles in the event. This occurs more often in gluon jets than in quark jets. This causes the data set to have a skewed percentage of quark and gluon jets than in reality. Since gluons carry no transversity <><><><, the results actually under represent the asymmetry. In reality, if the number of quark and gluon jets matched with the actual production. we would see a higher asymmetry. <><><> To account for this, we use embedding to determine the ratio of pion pairs coming from a quark to the number coming from a gluon when the triggers are turned off and when the triggers are turned on. This gives us an idea of how the triggers bias the data set. 
 
 The trigger also has a bias toward events coming from a parton carrying a high momentum fraction $x$. A quark with a large $x$ will lead to outgoing products carrying more energy. These products will have a greater chance to be over the trigger threshold. This bias toward higher $X$ events is shown in figure \ref{fig:TriggerBiasXHiQualColor}. 
 

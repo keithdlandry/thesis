@@ -13,16 +13,16 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11392 items from 5000.
+Reallocated field_info (elt_size=4) to 11528 items from 5000.
 Database file #1: TSWLatexianTemp_thesis-blx.bib
 Database file #2: thesisBib.bib
 Warning--entry type for "hardScatAmp" isn't style-file defined
 --line 182 of file thesisBib.bib
-Repeated entry---line 497 of file thesisBib.bib
+Repeated entry---line 514 of file thesisBib.bib
  : @article{crossRatio
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 602 of file thesisBib.bib
+I was expecting a `,' or a `}'---line 619 of file thesisBib.bib
  :   
  :   eprint = "1503.03495v2",
 (Error may have been on previous line)
@@ -78,45 +78,45 @@ Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianco
 while executing---line 2645 of file biblatex.bst
 Name 1 in "Aurore Courtoy, Alessandro Bacchetta, Marco Radici, and Andrea Bianconi" has a comma at the end for entry extractIFF
 while executing---line 2645 of file biblatex.bst
-You've used 47 entries,
+You've used 48 entries,
             6019 wiz_defined-function locations,
-            1488 strings with 23439 characters,
-and the built_in function-call counts, 208867 in all, are:
-= -- 7271
-> -- 7678
-< -- 1418
-+ -- 3164
-- -- 3657
-* -- 22600
-:= -- 13800
+            1497 strings with 23749 characters,
+and the built_in function-call counts, 211580 in all, are:
+= -- 7362
+> -- 7767
+< -- 1442
++ -- 3181
+- -- 3687
+* -- 22790
+:= -- 13953
 add.period$ -- 0
-call.type$ -- 47
-change.case$ -- 746
+call.type$ -- 48
+change.case$ -- 755
 chr.to.int$ -- 44
-cite$ -- 92
-duplicate$ -- 24655
-empty$ -- 20098
-format.name$ -- 7082
-if$ -- 43667
+cite$ -- 94
+duplicate$ -- 24975
+empty$ -- 20411
+format.name$ -- 7136
+if$ -- 44286
 int.to.chr$ -- 0
-int.to.str$ -- 124
+int.to.str$ -- 128
 missing$ -- 0
-newline$ -- 3042
-num.names$ -- 2265
-pop$ -- 15719
+newline$ -- 3067
+num.names$ -- 2312
+pop$ -- 16026
 preamble$ -- 1
-purify$ -- 1197
+purify$ -- 1207
 quote$ -- 0
-skip$ -- 10848
+skip$ -- 11016
 stack$ -- 0
-substring$ -- 3388
-swap$ -- 8978
-text.length$ -- 1526
-text.prefix$ -- 49
+substring$ -- 3405
+swap$ -- 9094
+text.length$ -- 1550
+text.prefix$ -- 50
 top$ -- 1
-type$ -- 1772
+type$ -- 1810
 warning$ -- 0
-while$ -- 944
+while$ -- 964
 width$ -- 0
-write$ -- 2994
+write$ -- 3018
 (There were 23 error messages)

@@ -4,108 +4,102 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of Tables}{10}{chapter*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{13}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Substructure of the atom}{13}{section.1.1}
+\contentsline {section}{\numberline {1.1}Substructure of the atom}{12}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Quantum Mechanical Spin}{14}{section.1.2}
+\contentsline {section}{\numberline {1.2}Quantum Mechanical Spin}{13}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Nucleon Structure}{15}{section.1.3}
+\contentsline {section}{\numberline {1.3}Nucleon Structure}{14}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}quark model}{16}{section.1.4}
+\contentsline {section}{\numberline {1.4}quark model}{15}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Electron Proton Scattering and Stucture Functions}{17}{section.1.5}
+\contentsline {section}{\numberline {1.5}Electron Proton Scattering and Stucture Functions}{16}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Factorization theorem and the unpolarized parton distribution function}{19}{section.1.6}
+\contentsline {section}{\numberline {1.6}Factorization theorem and the unpolarized parton distribution function}{18}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Spin Physics}{22}{chapter.2}
+\contentsline {chapter}{\numberline {2}Spin Physics}{21}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Logintudinally Polarized Deep Inelastic Scattering}{22}{section.2.1}
+\contentsline {section}{\numberline {2.1}Logintudinally Polarized Deep Inelastic Scattering}{21}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Proton Spin Crisis}{24}{section.2.2}
+\contentsline {section}{\numberline {2.2}Proton Spin Crisis}{23}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Transversity Distribution Function}{25}{section.2.3}
+\contentsline {section}{\numberline {2.3}Transversity Distribution Function}{24}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}First Experimental Measurements of Transversity}{26}{section.2.4}
+\contentsline {section}{\numberline {2.4}First Experimental Measurements of Transversity}{25}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}In Single Hadron Production semi-inclusive DIS}{26}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}In Single Hadron Production semi-inclusive DIS}{25}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}In Double Hadron Production semi-inclusive DIS}{27}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}In Double Hadron Production semi-inclusive DIS}{26}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}In Proton Collisions}{29}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}In Proton Collisions}{28}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Measuring the Interference Fragmentation Function at Belle}{29}{section.2.5}
+\contentsline {section}{\numberline {2.5}Measuring the Interference Fragmentation Function at Belle}{28}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Extracting IFF}{31}{section.2.6}
+\contentsline {section}{\numberline {2.6}Extracting IFF}{30}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Summary}{32}{section.2.7}
+\contentsline {section}{\numberline {2.7}Summary}{31}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}RHIC and The STAR Experiment}{34}{chapter.3}
+\contentsline {chapter}{\numberline {3}RHIC and The STAR Experiment}{33}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The RHIC complex}{34}{section.3.1}
+\contentsline {section}{\numberline {3.1}The RHIC complex}{33}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}The STAR Detector}{37}{section.3.2}
+\contentsline {section}{\numberline {3.2}The STAR Detector}{36}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{TPC}{37}{section*.18}
+\contentsline {subsubsection}{TPC}{36}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BEMC}{42}{section*.22}
+\contentsline {subsubsection}{BEMC}{41}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{EEMC}{46}{section*.28}
+\contentsline {subsubsection}{TOF}{45}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{TOF}{46}{section*.29}
+\contentsline {chapter}{\numberline {4}Theoretical Background for Analysis}{48}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}STAR triggers?}{49}{section.3.3}
+\contentsline {chapter}{\numberline {5}2006 analysis and sim}{52}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Theoretical Background for Analysis}{50}{chapter.4}
+\contentsline {chapter}{\numberline {6}2012 IFF}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}2006 analysis and sim}{54}{chapter.5}
+\contentsline {section}{\numberline {6.1}Data Set, Triggers, and Cuts}{57}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}2012 IFF}{59}{chapter.6}
+\contentsline {section}{\numberline {6.2}Particle Identification and Contamination}{59}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Data Set, Triggers, and Cuts}{59}{section.6.1}
+\contentsline {section}{\numberline {6.3}Finding $\pi ^+\pi ^-$ Pairs}{68}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Particle Identification and Contamination}{61}{section.6.2}
+\contentsline {section}{\numberline {6.4}Pair Distributions}{69}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Finding $\pi ^+\pi ^-$ Pairs}{70}{section.6.3}
+\contentsline {section}{\numberline {6.5}Calculating The Asymmetry}{80}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Pair Distributions}{71}{section.6.4}
+\contentsline {subsubsection}{Luminosity Method}{80}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Calculating The Asymmetry}{82}{section.6.5}
+\contentsline {subsubsection}{Cross Ratio Method}{80}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Luminosity Method}{82}{section*.70}
+\contentsline {section}{\numberline {6.6}Analysis Code}{84}{section.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cross Ratio Method}{82}{section*.71}
+\contentsline {subsubsection}{Advanced Treatment of Beam Polarization}{86}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Analysis Code}{86}{section.6.6}
+\contentsline {chapter}{\numberline {7}Results}{92}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Advanced Treatment of Beam Polarization}{88}{section*.75}
+\contentsline {section}{\numberline {7.1}One Dimensional Kinematic Binning}{92}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Results}{94}{chapter.7}
+\contentsline {section}{\numberline {7.2}Checking for Asymmetry in Same Sign Pairs}{96}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}One Dimensional Kinematic Binning}{94}{section.7.1}
+\contentsline {section}{\numberline {7.3}Check For Other False Asymmetries}{99}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Checking for Asymmetry in Same Sign Pairs}{99}{section.7.2}
+\contentsline {section}{\numberline {7.4}Two Dimensional Kinematic Binning}{103}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Check For Other False Asymmetries}{101}{section.7.3}
+\contentsline {section}{\numberline {7.5}Asymmetry with partial wave expansion}{107}{section.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Two Dimensional Kinematic Binning}{105}{section.7.4}
+\contentsline {section}{\numberline {7.6}Kaon Pion Pairs}{110}{section.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Asymmetry with partial wave expansion}{109}{section.7.5}
+\contentsline {chapter}{\numberline {8}Theoretical Predictions}{117}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Kaon Pion Pairs}{112}{section.7.6}
+\contentsline {subsection}{\numberline {8.0.1}Predictions for 2006}{117}{subsection.8.0.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Theoretical Predictions}{119}{chapter.8}
+\contentsline {subsection}{\numberline {8.0.2}Predictions for 2012}{119}{subsection.8.0.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.0.1}Predictions for 2006}{119}{subsection.8.0.1}
+\contentsline {chapter}{\numberline {9}Pythia Tune Selection}{122}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.0.2}Predictions for 2012}{121}{subsection.8.0.2}
+\contentsline {chapter}{\numberline {10}Trigger Bias from Embedding}{128}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Pythia Tune Selection}{124}{chapter.9}
+\contentsline {chapter}{\numberline {11}discussion}{131}{chapter.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Embedding Analysis}{130}{chapter.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Trigger Bias}{131}{chapter.11}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}discussion}{134}{chapter.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{135}{chapter*.116}
+\contentsline {chapter}{Bibliography}{132}{chapter*.115}

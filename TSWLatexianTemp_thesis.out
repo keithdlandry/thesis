@@ -21,28 +21,26 @@
 \BOOKMARK [0][-]{chapter.3}{RHIC and The STAR Experiment}{}% 21
 \BOOKMARK [1][-]{section.3.1}{The RHIC complex}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.2}{The STAR Detector}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.3}{STAR triggers?}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Theoretical Background for Analysis}{}% 25
-\BOOKMARK [0][-]{chapter.5}{2006 analysis and sim}{}% 26
-\BOOKMARK [0][-]{chapter.6}{2012 IFF}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Data Set, Triggers, and Cuts}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{Particle Identification and Contamination}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.3}{Finding +- Pairs}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.4}{Pair Distributions}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.5}{Calculating The Asymmetry}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.6}{Analysis Code}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 34
-\BOOKMARK [1][-]{section.7.1}{One Dimensional Kinematic Binning}{chapter.7}% 35
-\BOOKMARK [1][-]{section.7.2}{Checking for Asymmetry in Same Sign Pairs}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.3}{Check For Other False Asymmetries}{chapter.7}% 37
-\BOOKMARK [1][-]{section.7.4}{Two Dimensional Kinematic Binning}{chapter.7}% 38
-\BOOKMARK [1][-]{section.7.5}{Asymmetry with partial wave expansion}{chapter.7}% 39
-\BOOKMARK [1][-]{section.7.6}{Kaon Pion Pairs}{chapter.7}% 40
-\BOOKMARK [0][-]{chapter.8}{Theoretical Predictions}{}% 41
-\BOOKMARK [1][-]{subsection.8.0.1}{Predictions for 2006}{chapter.8}% 42
-\BOOKMARK [2][-]{subsection.8.0.2}{Predictions for 2012}{subsection.8.0.1}% 43
-\BOOKMARK [0][-]{chapter.9}{Pythia Tune Selection}{}% 44
-\BOOKMARK [0][-]{chapter.10}{Embedding Analysis}{}% 45
-\BOOKMARK [0][-]{chapter.11}{Trigger Bias}{}% 46
-\BOOKMARK [0][-]{chapter.12}{discussion}{}% 47
-\BOOKMARK [0][-]{chapter*.116}{Bibliography}{}% 48
+\BOOKMARK [0][-]{chapter.4}{Theoretical Background for Analysis}{}% 24
+\BOOKMARK [0][-]{chapter.5}{2006 analysis and sim}{}% 25
+\BOOKMARK [0][-]{chapter.6}{2012 IFF}{}% 26
+\BOOKMARK [1][-]{section.6.1}{Data Set, Triggers, and Cuts}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.2}{Particle Identification and Contamination}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.3}{Finding +- Pairs}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.4}{Pair Distributions}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.5}{Calculating The Asymmetry}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.6}{Analysis Code}{chapter.6}% 32
+\BOOKMARK [0][-]{chapter.7}{Results}{}% 33
+\BOOKMARK [1][-]{section.7.1}{One Dimensional Kinematic Binning}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.2}{Checking for Asymmetry in Same Sign Pairs}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.3}{Check For Other False Asymmetries}{chapter.7}% 36
+\BOOKMARK [1][-]{section.7.4}{Two Dimensional Kinematic Binning}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.5}{Asymmetry with partial wave expansion}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.6}{Kaon Pion Pairs}{chapter.7}% 39
+\BOOKMARK [0][-]{chapter.8}{Theoretical Predictions}{}% 40
+\BOOKMARK [1][-]{subsection.8.0.1}{Predictions for 2006}{chapter.8}% 41
+\BOOKMARK [2][-]{subsection.8.0.2}{Predictions for 2012}{subsection.8.0.1}% 42
+\BOOKMARK [0][-]{chapter.9}{Pythia Tune Selection}{}% 43
+\BOOKMARK [0][-]{chapter.10}{Trigger Bias from Embedding}{}% 44
+\BOOKMARK [0][-]{chapter.11}{discussion}{}% 45
+\BOOKMARK [0][-]{chapter*.115}{Bibliography}{}% 46
